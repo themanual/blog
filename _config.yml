@@ -1,4 +1,12 @@
-name: The Manual
+name:     The Manual
 markdown: kramdown
 pygments: true
 include:  ['.htaccess']
+exclude:  [
+  'package.json', 
+  'node_modules', 
+  'bower.json',
+  'bower_components', 
+  'Gruntfile.js',
+  'scss',
+  'README.md']
