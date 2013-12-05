@@ -1,0 +1,4 @@
+name: The Manual
+markdown: kramdown
+pygments: true
+include:  ['.htaccess']
