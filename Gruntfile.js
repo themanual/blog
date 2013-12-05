@@ -16,12 +16,45 @@ module.exports = function(grunt) {
           'assets/css/main.css': 'assets/scss/main.scss'
         }
       }
+    },
+
+    // Jekyll
+    jekyll: {
+      dev: {
+        options: {drafts: true }
+      },
+      build: {
+
+      }
+    },
+
+    // Watch
+    watch: {
+
+      css: {
+        files: 'assets/scss/**/*.scss',
+        tasks: ['sass:dev', 'jekyll:dev'],
+      },
+
+      jekyll: {
+        files: ["*.md", "*.html", "_layouts/**/*", "_posts/**/*", "_drafts/**/*"],
+        tasks: ['jekyll:dev'],
+      },
+
+      livereload: {
+        files: ['_site/**/*'],
+        options: { livereload: true }
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task.
-  grunt.registerTask('default', ['sass:dev']);
+  grunt.registerTask('dev',     ['sass:dev', 'jekyll:dev']);
+  grunt.registerTask('default', ['dev']);
 
 };
