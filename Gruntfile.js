@@ -20,30 +20,29 @@ module.exports = function(grunt) {
 
     // Jekyll
     jekyll: {
-      dev: {
-        options: {drafts: true }
-      },
-      build: {
-
-      }
+      dev:    { options: {drafts: true } },
+      build:  { }
     },
 
     // Watch
     watch: {
 
       css: {
-        files: 'assets/scss/**/*.scss',
+        files: 'assets/scss/**/*',
         tasks: ['sass:dev', 'jekyll:dev'],
       },
 
       jekyll: {
-        files: ["*.md", "*.html", "_layouts/**/*", "_posts/**/*", "_drafts/**/*"],
+        files: ["*.{yml,md,html}", "_*/**", "!_site/**/*"],
         tasks: ['jekyll:dev'],
       },
 
-      livereload: {
+      reload: {
         files: ['_site/**/*'],
-        options: { livereload: true }
+        options: {
+          event: ['added', 'changed'],
+          livereload: true,
+        }
       }
     }
 
@@ -55,6 +54,7 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('dev',     ['sass:dev', 'jekyll:dev']);
-  grunt.registerTask('default', ['dev']);
+  grunt.registerTask('work',    ['dev', 'watch'])
+  grunt.registerTask('default', 'dev');
 
 };
