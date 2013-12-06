@@ -1,0 +1,41 @@
+body {
+  font-family: $type-serif;
+  font-size: em(25, 16);
+}
+
+body > *            { background-color: white; }
+body, body > footer { background: gray(96%); }
+
+figure img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: gray(30%);
+  @include colored-link;
+}
+
+.box-title {
+  @include smallcaps-heading;
+  line-height: 1em;
+  margin-bottom: 2.5em;
+}
+
+.box-subtitle {
+  @include smallcaps-heading-thin;
+  line-height: 1em;
+  margin-bottom:  0.75em;
+  * + & { margin-top: 2em; }
+}
+
+.box-title--lined {
+  @extend .box-title;
+  line-height: 1;
+  margin-bottom:  1.5em;
+  padding-top:    1.2em;
+  padding-bottom: 1.2em;
+  border-bottom: divider();
+}
