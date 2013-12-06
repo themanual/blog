@@ -1,6 +1,9 @@
-name:     The Manual
+name:       The Manual
+permalink:  /:year/:month/:day/:title
+
 markdown: kramdown
 pygments: true
+
 include:  ['.htaccess']
 exclude:  [
   'package.json', 
