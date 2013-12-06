@@ -256,29 +256,24 @@ textarea {
 }
 
 /* line 1, ../scss/_base.scss */
+html, body {
+  background-color: white;
+}
+
+/* line 5, ../scss/_base.scss */
 body {
   font-family: "freight-text-pro", serif;
   font-size: 1.5625em;
 }
 
-/* line 6, ../scss/_base.scss */
-body > * {
-  background-color: white;
-}
-
-/* line 7, ../scss/_base.scss */
-body, body > footer {
-  background: whitesmoke;
-}
-
-/* line 9, ../scss/_base.scss */
+/* line 10, ../scss/_base.scss */
 figure img {
   display: block;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* line 15, ../scss/_base.scss */
+/* line 16, ../scss/_base.scss */
 a {
   text-decoration: none;
   color: #4d4d4d;
@@ -288,7 +283,7 @@ a:hover, a:focus, a:active {
   color: black;
 }
 
-/* line 21, ../scss/_base.scss */
+/* line 22, ../scss/_base.scss */
 .box-title, .box-title--lined {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
@@ -302,7 +297,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 2.5em;
 }
 
-/* line 27, ../scss/_base.scss */
+/* line 28, ../scss/_base.scss */
 .box-subtitle {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
@@ -313,12 +308,12 @@ a:hover, a:focus, a:active {
   line-height: 1em;
   margin-bottom: 0.75em;
 }
-/* line 31, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 * + .box-subtitle {
   margin-top: 2em;
 }
 
-/* line 34, ../scss/_base.scss */
+/* line 35, ../scss/_base.scss */
 .box-title--lined {
   line-height: 1;
   margin-bottom: 1.5em;

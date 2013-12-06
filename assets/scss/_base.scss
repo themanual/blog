@@ -1,10 +1,11 @@
+html, body {
+  background-color: white;
+}
+
 body {
   font-family: $type-serif;
   font-size: em(25, 16);
 }
-
-body > *            { background-color: white; }
-body, body > footer { background: gray(96%); }
 
 figure img {
   display: block;
