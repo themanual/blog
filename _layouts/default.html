@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html class="no-js">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/assets/css/main.css">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <!-- Title and Meta -->
+  <title>{{ page.title }}</title>
+  
+  <!-- JS -->
+  <script type="text/javascript" src="//use.typekit.net/wnf5tgz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    </head>
-    <body>
+  <!-- CSS -->
+  <link rel="stylesheet" media="screen" href="/assets/css/main.css" />
+  
+</head>
+<body lang="en">
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+    <header>
+      <h1><a href="/">{{ site.name }}</a></h1>
+    </header>
+
+    <main class="blog"><div class="g-wrapper">
+      <section class="blog-main">
+        {{ content }}
+      </section>
+      <aside class="blog-sidebar">
+        <section class="box">
+          <h2 class="box-title--lined">Subscribe</h2>
+          <div class="blog-sidebar-subscribe">
+            <ul class="keyword-list">
+              <li>Grab the <a href="#">RSS Feed</a></li>
+              <li>Follow us on <a href="#">Twitter</a></li>
+              <li>Subscribe <a href="#">via Email</a></li>
+            </ul>
           </div>
+        </section>
+      </aside>
+    </div></main>
 
-          {{ content }}
-
-    </body>
+  </body>
 </html>

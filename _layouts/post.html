@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article class="blog-post">
+  <header class="blog-post-header">
+    <p class="blog-post-topic">{{ page.category }}</p>
+    <h1 class="blog-post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <p class="blog-post-byline">By {{ page.author}} in {{ page.date | date_to_string }}</p>
+  </header>
 
-<div class="post">
-{{ content }}
-</div>
+  <div class="blog-post-body">
+    {{ content }}
+  </div>
+</article>
