@@ -4,7 +4,7 @@ $type-serif:              "freight-text-pro", serif;
 $type-indent:             1.25em;
 $type-breaks:             1.5em;
 $type-line-height:        1.5;
-$type-main-value:         25;
+$type-main-value:         20;
 $type-main-size:          ($type-main-value * 1px);
 
 @function weight($keyword) {
@@ -41,4 +41,20 @@ $type-main-size:          ($type-main-value * 1px);
   font-family:  $type-sans;
   font-weight:  weight($font-weight);
   font-style:   $font-style;
+}
+
+@function strip-units($val) {
+  @return ($val / ($val * 0 + 1));
+}
+
+@function rem($px-val, $base: $type-main-value) {
+  @if not unitless($px-val)   { $px-val: strip-units($px-val); }
+  @if not unitless($base)     { $base: strip-units($base); }
+  @return #{$px-val/$base}rem;
+}
+
+@mixin font-size-rem($px-val, $base: $type-main-value) {
+  @if not unitless($px-val)   { $px-val: strip-units($px-val); }
+  font-size: #{$px-val}px;
+  font-size: rem($px-val, $base);
 }

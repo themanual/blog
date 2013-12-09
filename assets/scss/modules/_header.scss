@@ -1,0 +1,55 @@
+.site-header {
+  background-color: gray(96%);
+  border-bottom: divider();
+  font-family: $type-sans;
+}
+
+.site-header > div {
+  @include grid-wrapper;
+  @include container-spacing(padding-top);
+  @include container-spacing(padding-bottom);
+}
+
+.site-header-name {
+  @include span-columns(9);
+}
+
+.site-header-buy {
+  @include span-columns(3);
+}
+
+.site-header-name {
+  float: left;
+  @include font-size-rem(26px);
+  line-height: 50px;
+  font-weight: weight(bold);
+  a {
+    color: black;
+    &:hover, &:focus { color: $color-link-blue-nicer; }
+  }
+}
+
+
+.site-header-buy > a {
+  @include font-size-rem(15px);
+  text-transform: uppercase;
+  text-align: center;
+  
+  display: block;
+  border: divider();
+  border-color: gray(80%);
+  border-radius: 5px;
+
+  height:       50px;
+  line-height:  48px;
+
+  color: gray(40%);
+  font-weight: weight(bold);
+  letter-spacing: 0.15em;
+  word-spacing: 0.15em;
+
+  &:hover {
+    color: black;
+    border-color: gray(60%);
+  }
+}

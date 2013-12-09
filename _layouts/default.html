@@ -14,20 +14,29 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   <!-- CSS -->
-  <link rel="stylesheet" media="screen" href="assets/css/main.css" />
+  <link rel="stylesheet" media="screen" href="/assets/css/main.css" />
   
 </head>
 <body lang="en">
 
-    <header>
-      <h1><a href="/">{{ site.name }}</a></h1>
-    </header>
+    <header class="site-header"><div>
+      <h1 class="site-header-name"><a href="/">The Manual &middot; Blog</a></h1>
+      <p class="site-header-buy"><a href="http://buy.alwaysreadthemanual.com">Buy Issues</a></p>
+    </div></header>
 
-    <main class="blog"><div class="g-wrapper">
+    <main class="blog"><div>
       <section class="blog-main">
         {{ content }}
       </section>
       <aside class="blog-sidebar">
+        <section class="box">
+          <h2 class="box-title--lined">About</h2>
+          <div class="blog-sidebar-text">
+            <p>The Manual is a thrice-yearly publication on web design as a discipline. You can buy our issues from our <a href="http://buy.alwaysreadthemanual.com">online store</a>.</p>
+            <p>We’re currently working a brand new website and digital editions, launching in early 2014. Follow along for news and sneak peeks of our process.</p>
+          </div>
+        </section>
+
         <section class="box">
           <h2 class="box-title--lined">Subscribe</h2>
           <div class="blog-sidebar-subscribe">

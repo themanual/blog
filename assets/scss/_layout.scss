@@ -1,6 +1,6 @@
 @mixin container-spacing($props, $factor: 1) {
   @each $prop in $props {
-    #{$prop}: $factor * 1.5em;
+    #{$prop}: $factor * 2rem;
   }
 }
 

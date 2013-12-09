@@ -19,25 +19,24 @@
 }
 
 
-
-@mixin smallcaps-heading {
-  @include sans-serif(bold);
-  font-size: 15px;
-  color: gray(20%);
-  
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  word-spacing:   0.1em;
-}
-
-@mixin smallcaps-heading-thin {
+@mixin smallcaps-heading-base {
   font-family: $type-sans;
-  font-size: 15px;
-  color: gray(60%);
-  
+  @include font-size-rem(15px);
+
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing:   0.15em;
+}
+
+@mixin smallcaps-heading {
+  @include smallcaps-heading-base;
+  font-weight: weight(bold);
+  color: gray(20%);
+}
+
+@mixin smallcaps-heading-thin {
+  @include smallcaps-heading-base;
+  color: gray(60%);
 }
 
 @mixin issue-number {

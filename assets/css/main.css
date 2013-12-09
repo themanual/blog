@@ -166,8 +166,8 @@ textarea {
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   min-width: 1000px;
 }
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
@@ -201,8 +201,8 @@ textarea {
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   min-width: 1000px;
   *zoom: 1;
   display: block;
@@ -258,22 +258,18 @@ textarea {
 /* line 1, ../scss/_base.scss */
 html, body {
   background-color: white;
-}
-
-/* line 5, ../scss/_base.scss */
-body {
   font-family: "freight-text-pro", serif;
-  font-size: 1.5625em;
+  font-size: 125%;
 }
 
-/* line 10, ../scss/_base.scss */
+/* line 7, ../scss/_base.scss */
 figure img {
   display: block;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* line 16, ../scss/_base.scss */
+/* line 13, ../scss/_base.scss */
 a {
   text-decoration: none;
   color: #4d4d4d;
@@ -283,37 +279,38 @@ a:hover, a:focus, a:active {
   color: black;
 }
 
-/* line 22, ../scss/_base.scss */
+/* line 19, ../scss/_base.scss */
 .box-title, .box-title--lined {
   font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 15px;
-  color: #333333;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  word-spacing: 0.1em;
+  word-spacing: 0.15em;
+  font-weight: 700;
+  color: #333333;
   line-height: 1em;
   margin-bottom: 2.5em;
 }
 
-/* line 28, ../scss/_base.scss */
+/* line 25, ../scss/_base.scss */
 .box-subtitle {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
-  color: #999999;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing: 0.15em;
+  color: #999999;
   line-height: 1em;
   margin-bottom: 0.75em;
 }
-/* line 32, ../scss/_base.scss */
+/* line 29, ../scss/_base.scss */
 * + .box-subtitle {
   margin-top: 2em;
 }
 
-/* line 35, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 .box-title--lined {
   line-height: 1;
   margin-bottom: 1.5em;
@@ -322,19 +319,123 @@ a:hover, a:focus, a:active {
   border-bottom: solid 1px #e6e6e6;
 }
 
+/* line 1, ../scss/modules/_header.scss */
+.site-header {
+  background-color: whitesmoke;
+  border-bottom: solid 1px #e6e6e6;
+  font-family: "franklin-gothic-urw", sans-serif;
+}
+
+/* line 7, ../scss/modules/_header.scss */
+.site-header > div {
+  *zoom: 1;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-width: 1000px;
+  *zoom: 1;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.site-header > div:before, .site-header > div:after {
+  content: " ";
+  display: table;
+}
+/* line 23, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.site-header > div:after {
+  clear: both;
+}
+/* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.site-header > div:before, .site-header > div:after {
+  content: " ";
+  display: table;
+}
+/* line 23, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.site-header > div:after {
+  clear: both;
+}
+
+/* line 13, ../scss/modules/_header.scss */
+.site-header-name {
+  float: left;
+  display: block;
+  margin-right: 3.16742%;
+  width: 74.20814%;
+}
+/* line 40, /Users/paulo/Development/themanual-blog/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+.site-header-name:last-child {
+  margin-right: 0;
+}
+
+/* line 17, ../scss/modules/_header.scss */
+.site-header-buy {
+  float: left;
+  display: block;
+  margin-right: 3.16742%;
+  width: 22.62443%;
+}
+/* line 40, /Users/paulo/Development/themanual-blog/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+.site-header-buy:last-child {
+  margin-right: 0;
+}
+
+/* line 21, ../scss/modules/_header.scss */
+.site-header-name {
+  float: left;
+  font-size: 26px;
+  font-size: 1.3rem;
+  line-height: 50px;
+  font-weight: 700;
+}
+/* line 26, ../scss/modules/_header.scss */
+.site-header-name a {
+  color: black;
+}
+/* line 28, ../scss/modules/_header.scss */
+.site-header-name a:hover, .site-header-name a:focus {
+  color: #0055dd;
+}
+
+/* line 33, ../scss/modules/_header.scss */
+.site-header-buy > a {
+  font-size: 15px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  border: solid 1px #e6e6e6;
+  border-color: #cccccc;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 48px;
+  color: #666666;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  word-spacing: 0.15em;
+}
+/* line 51, ../scss/modules/_header.scss */
+.site-header-buy > a:hover {
+  color: black;
+  border-color: #999999;
+}
+
 /* line 1, ../scss/modules/_blog.scss */
 .blog > div {
   *zoom: 1;
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   min-width: 1000px;
   *zoom: 1;
   display: block;
-  padding-top: 1.5em;
-  padding-bottom: 3em;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .blog > div:before, .blog > div:after {
@@ -357,35 +458,34 @@ a:hover, a:focus, a:active {
 
 /* line 7, ../scss/modules/_blog.scss */
 .blog-main {
-  float: right;
+  float: left;
   display: block;
-  margin-left: 3.16742%;
-  width: 65.61086%;
+  margin-right: 3.16742%;
+  width: 74.20814%;
 }
 /* line 40, /Users/paulo/Development/themanual-blog/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .blog-main:last-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 /* line 11, ../scss/modules/_blog.scss */
 .blog-sidebar {
-  float: right;
+  float: left;
   display: block;
-  margin-left: 3.16742%;
+  margin-right: 3.16742%;
   width: 22.62443%;
-  margin-right: 8.59729%;
 }
 /* line 40, /Users/paulo/Development/themanual-blog/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .blog-sidebar:last-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 
-/* line 16, ../scss/modules/_blog.scss */
+/* line 15, ../scss/modules/_blog.scss */
 .blog-featured-posts {
-  margin-bottom: 3em;
+  margin-bottom: 4rem;
 }
 
-/* line 20, ../scss/modules/_blog.scss */
+/* line 19, ../scss/modules/_blog.scss */
 .blog-main-aside.has-two {
   *zoom: 1;
   display: block;
@@ -399,7 +499,7 @@ a:hover, a:focus, a:active {
 .blog-main-aside.has-two:after {
   clear: both;
 }
-/* line 22, ../scss/modules/_blog.scss */
+/* line 21, ../scss/modules/_blog.scss */
 .blog-main-aside.has-two > * {
   float: left;
   display: block;
@@ -411,7 +511,7 @@ a:hover, a:focus, a:active {
   margin-right: 0;
 }
 
-/* line 28, ../scss/modules/_blog.scss */
+/* line 27, ../scss/modules/_blog.scss */
 .blog a:link, .blog a:visited {
   color: #0055dd;
 }
@@ -420,55 +520,58 @@ a:hover, a:focus, a:active {
   color: black;
 }
 
-/* line 33, ../scss/modules/_blog.scss */
+/* line 32, ../scss/modules/_blog.scss */
 .blog-sidebar {
   color: #666666;
   font-family: "franklin-gothic-urw", sans-serif;
 }
-/* line 36, ../scss/modules/_blog.scss */
+/* line 35, ../scss/modules/_blog.scss */
 .blog-sidebar > .box {
   font-size: 16px;
+  font-size: 0.8rem;
   margin-bottom: 2em;
 }
 
-/* line 43, ../scss/modules/_blog.scss */
+/* line 42, ../scss/modules/_blog.scss */
 .blog mark {
   background: #FFFF00;
   color: black;
 }
 
-/* line 50, ../scss/modules/_blog.scss */
+/* line 49, ../scss/modules/_blog.scss */
 .blog-posts .box-title, .blog-posts .box-title--lined {
   margin-bottom: 0;
 }
 
-/* line 56, ../scss/modules/_blog.scss */
+/* line 55, ../scss/modules/_blog.scss */
 .blog-index {
-  font-size: 0.72em;
+  font-size: 18px;
+  font-size: 0.9rem;
 }
 
-/* line 60, ../scss/modules/_blog.scss */
+/* line 59, ../scss/modules/_blog.scss */
 .blog-index-heading {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
-  color: #999999;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing: 0.15em;
+  color: #999999;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 64, ../scss/modules/_blog.scss */
+/* line 63, ../scss/modules/_blog.scss */
 * + .blog-index-heading {
   margin-top: 3em;
 }
 
-/* line 67, ../scss/modules/_blog.scss */
+/* line 66, ../scss/modules/_blog.scss */
 .blog-index-list > li {
   margin-bottom: 1.5em;
 }
 
-/* line 71, ../scss/modules/_blog.scss */
+/* line 70, ../scss/modules/_blog.scss */
 .blog-index-title {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
@@ -476,26 +579,28 @@ a:hover, a:focus, a:active {
   line-height: 1.3;
 }
 
-/* line 78, ../scss/modules/_blog.scss */
+/* line 77, ../scss/modules/_blog.scss */
 .blog-index-synopsis {
   line-height: 1.4;
   color: #666666;
 }
 
-/* line 83, ../scss/modules/_blog.scss */
+/* line 82, ../scss/modules/_blog.scss */
 .blog-index-date {
+  font-size: 13px;
+  font-size: 0.65rem;
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
-  color: #999999;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing: 0.15em;
+  color: #999999;
   float: right;
-  font-size: 13px;
   margin-left: 2em;
 }
 
-/* line 91, ../scss/modules/_blog.scss */
+/* line 90, ../scss/modules/_blog.scss */
 .blog-search input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -505,6 +610,7 @@ a:hover, a:focus, a:active {
   font-family: "franklin-gothic-urw", sans-serif;
   color: black;
   font-size: 16px;
+  font-size: 0.8rem;
   padding: 0px;
   text-indent: 0px;
   padding-left: 2.5em;
@@ -519,11 +625,11 @@ a:hover, a:focus, a:active {
   -o-appearance: none;
   appearance: none;
 }
-/* line 110, ../scss/modules/_blog.scss */
+/* line 109, ../scss/modules/_blog.scss */
 .blog-search input:hover {
   border-color: #cccccc;
 }
-/* line 113, ../scss/modules/_blog.scss */
+/* line 112, ../scss/modules/_blog.scss */
 .blog-search input:focus {
   outline: none;
   border-color: black;
@@ -548,16 +654,16 @@ a:hover, a:focus, a:active {
   color: #b3b3b3;
   opacity: 1.0;
 }
-/* line 125, ../scss/modules/_blog.scss */
+/* line 124, ../scss/modules/_blog.scss */
 .blog-search input::-webkit-search-decoration {
   display: none;
 }
-/* line 129, ../scss/modules/_blog.scss */
+/* line 128, ../scss/modules/_blog.scss */
 .blog-search input::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 140, ../scss/modules/_blog.scss */
+/* line 139, ../scss/modules/_blog.scss */
 .blog-main-cta {
   border: solid 1px #e6e6e6;
   border-width: 2px;
@@ -571,18 +677,29 @@ a:hover, a:focus, a:active {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 17px;
+  font-size: 0.85rem;
   letter-spacing: 0.15em;
   word-spacing: 0.15em;
 }
-/* line 152, ../scss/modules/_blog.scss */
+/* line 151, ../scss/modules/_blog.scss */
 .blog-main-cta:last-child {
   margin-right: 0;
 }
 
+/* line 161, ../scss/modules/_blog.scss */
+.blog-sidebar-text {
+  line-height: 1.4;
+}
+/* line 163, ../scss/modules/_blog.scss */
+.blog-sidebar-text p + p {
+  margin-top: 1em;
+}
+
 /* line 1, ../scss/modules/_blog-post.scss */
 .blog-post {
-  font-size: 0.8em;
-  padding-bottom: 3.75em;
+  font-size: 20px;
+  font-size: 1rem;
+  padding-bottom: 5rem;
 }
 /* line 5, ../scss/modules/_blog-post.scss */
 .blog-post + .blog-post {
@@ -616,6 +733,7 @@ a:hover, a:focus, a:active {
 .blog-post-topic {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing: 0.15em;
@@ -636,7 +754,8 @@ a:hover, a:focus, a:active {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2em;
+  font-size: 40px;
+  font-size: 2rem;
   line-height: 1.25;
 }
 /* line 49, ../scss/modules/_blog-post.scss */
@@ -650,8 +769,9 @@ a:hover, a:focus, a:active {
 
 /* line 53, ../scss/modules/_blog-post.scss */
 .blog-post-byline {
-  font-family: "franklin-gothic-urw", sans-serif;
   font-size: 18px;
+  font-size: 0.9rem;
+  font-family: "franklin-gothic-urw", sans-serif;
   line-height: 1.2;
   color: #999999;
   margin-top: 0.25em;

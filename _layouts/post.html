@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="blog-post">
   <header class="blog-post-header">
-    <p class="blog-post-topic">{{ page.category }}</p>
+    {% if page.category %}<p class="blog-post-topic">{{ page.category }}</p>{% endif %}
     <h1 class="blog-post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
     <p class="blog-post-byline">By {{ page.author}} in {{ page.date | date_to_string }}</p>
   </header>

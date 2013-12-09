@@ -1,5 +1,5 @@
 .blog-post {
-  font-size: em(20, $type-main-value);
+  @include font-size-rem(20px);
   @include container-spacing(padding-bottom, 2/(20/25));
 
   + .blog-post {
@@ -28,7 +28,7 @@
 
 .blog-post-topic {
   font-family: $type-sans;
-  font-size: 15px;
+  @include font-size-rem(15px);
   
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -43,7 +43,7 @@
 
 .blog-post-title {
   @include sans-serif(bold);
-  font-size: 2em;
+  @include font-size-rem(40px);
   line-height: 1.25;
 
   a:link, a:visited { color: black; }
@@ -51,11 +51,11 @@
 }
 
 .blog-post-byline {
+  @include font-size-rem(18px);
   font-family: $type-sans;
-  font-size: 18px;
+  
   line-height: 1.2;
   color: gray(60%);
-
   margin-top: 0.25em;
 }
 
