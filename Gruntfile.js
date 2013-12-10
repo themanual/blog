@@ -20,6 +20,30 @@ module.exports = function(grunt) {
       }
     },
 
+
+
+    notify: {
+      
+      options: {
+        title: 'Grunt'
+      },
+
+      css: {
+        options: { message: 'Compiled CSS' }
+      },
+
+      jekyll: {
+        options: { message: 'Built Jekyll' }
+      },
+
+      reload: {
+        options: { message: 'Live Reload' }
+      }
+
+    },
+
+
+
     copy: {
       css: {
         src: 'assets/css/main.css',
@@ -27,29 +51,39 @@ module.exports = function(grunt) {
       }
     },
 
+
+
     // Jekyll
     jekyll: {
       dev:    { options: {drafts: true } },
       build:  { }
     },
 
+
+
     // Watch
     watch: {
 
-      options: {
-        livereload: true
-      },
-
       css: {
         files: 'assets/scss/**/*',
-        tasks: 'css:dev',
+        tasks: ['css:dev', 'notify:css'],
       },
 
       jekyll: {
         files: ["*.{yml,md,html}", "_*/**", "!_site/**/*"],
-        tasks: 'jekyll:dev',
+        tasks: ['jekyll:dev', 'notify:jekyll'],
+      },
+
+      reload: {
+        files: ["_site/**/*"],
+        tasks: ['notify:reload'],
+        options: {
+          livereload: true
+        }
       }
     }
+
+
 
   });
 
