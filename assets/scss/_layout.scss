@@ -1,13 +1,12 @@
 @mixin container-spacing($props, $factor: 1) {
   @each $prop in $props {
-    #{$prop}: $factor * 2rem;
+    #{$prop}: $factor * 6.25%;
   }
 }
 
 @mixin wrapper {
   @include outer-container;
   @include container-spacing(padding-left padding-right);
-  min-width: $min-width;
 }
 
 @mixin grid-wrapper($direction: $default-layout-direction) {

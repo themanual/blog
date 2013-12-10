@@ -6,8 +6,8 @@
 
 .site-header > div {
   @include grid-wrapper;
-  @include container-spacing(padding-top);
-  @include container-spacing(padding-bottom);
+  @include container-spacing(padding-top, 0.5);
+  @include container-spacing(padding-bottom, 0.5);
 }
 
 .site-header-name {
@@ -20,11 +20,13 @@
 
 .site-header-name {
   float: left;
-  @include font-size-rem(26px);
+  @include font-size-rem(32px);
   line-height: 50px;
   font-weight: weight(bold);
   a {
-    color: black;
+    // color: $color-link-blue-nicer;
+    color: gray(10%);
+    i { color: gray(60%); }
     &:hover, &:focus { color: $color-link-blue-nicer; }
   }
 }
@@ -36,14 +38,14 @@
   text-align: center;
   
   display: block;
-  border: divider();
-  border-color: gray(80%);
+  border: solid 1px $color-link-blue-nicer;
   border-radius: 5px;
 
-  height:       50px;
-  line-height:  48px;
 
-  color: gray(30%);
+  height:       50px;
+  line-height:  (50px - 2);
+
+  color: $color-link-blue-nicer;
   font-weight: weight(bold);
   letter-spacing: 0.15em;
   word-spacing: 0.15em;

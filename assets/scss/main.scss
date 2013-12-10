@@ -1,12 +1,13 @@
-// Mixins and Reset
-@import "meta/mixins";
-@import "meta/reset";
-
 // Bourbon
 @import "bourbon/app/assets/stylesheets/bourbon";
+@import "garnish/src/garnish";
+
 @import "meta/settings";
 @import "meta/settings-color";
 @import "meta/settings-type";
+
+// Mixins and Reset
+@import "meta/reset";
 
 // Neat and custom extensions
 @import "neat/app/assets/stylesheets/neat";
