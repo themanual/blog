@@ -1,7 +1,7 @@
 html, body {
   background-color: white;
-  font-family: $type-serif;
-  font-size: percentage($type-main-size/16px);
+  font-family: $type-serif;  
+  font-size: $type-main-size;
 }
 
 figure img {

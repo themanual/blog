@@ -143,7 +143,6 @@
 
   display: block;
   text-align: center;
-  max-width: 32*20px;
   
   padding: 1.5em;
   
@@ -157,6 +156,10 @@
   @include font-size-rem(17px);
   letter-spacing: 0.15em;
   word-spacing: 0.15em;
+}
+
+.blog-sidebar-twitter {
+  margin-top: 2.5em;
 }
 
 .blog-sidebar-text {

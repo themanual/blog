@@ -3,7 +3,7 @@ title: Hello, Rdio
 layout: post
 category: Feature
 author: Paulo Pereira
-synopsis: Something something something.
+synopsis: An application for a design intership at Rdio.
 ---
 
 Since I began freelancing, working for a company again has crossed my mind more than once. But I'd only do it if I could work on something that I need, use and love. However, the number of products that I use *every single day* is very small.[^fn-listary] One of those products is [Rdio][rdio].
