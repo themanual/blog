@@ -20,6 +20,13 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      css: {
+        src: 'assets/css/main.css',
+        dest: '_site/assets/css/main.css'
+      }
+    },
+
     // Jekyll
     jekyll: {
       dev:    { options: {drafts: true } },
@@ -29,31 +36,32 @@ module.exports = function(grunt) {
     // Watch
     watch: {
 
+      options: {
+        livereload: true
+      },
+
       css: {
         files: 'assets/scss/**/*',
-        tasks: ['sass:dev', 'jekyll:dev'],
+        tasks: 'css:dev',
       },
 
       jekyll: {
         files: ["*.{yml,md,html}", "_*/**", "!_site/**/*"],
-        tasks: ['jekyll:dev'],
-      },
-
-      reload: {
-        files: ['_site/**/*'],
-        options: {
-          event: ['added', 'changed'],
-          livereload: true,
-        }
+        tasks: 'jekyll:dev',
       }
     }
 
   });
 
 
-  // Default task.
-  grunt.registerTask('dev',     ['sass:dev', 'jekyll:dev']);
-  grunt.registerTask('work',    ['dev', 'watch'])
-  grunt.registerTask('default', 'dev');
+  // Tasks
+  grunt.registerTask('css:dev', ['sass:dev', 'copy:css']);
+
+  // Build assets and jekyll
+  grunt.registerTask('build:dev', ['sass:dev', 'jekyll:dev']);
+
+  // Build for development, and watch
+  grunt.registerTask('work',      ['build:dev', 'watch'])
+  grunt.registerTask('default',   'work');
 
 };
