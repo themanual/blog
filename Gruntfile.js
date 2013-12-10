@@ -34,10 +34,6 @@ module.exports = function(grunt) {
 
       jekyll: {
         options: { message: 'Built Jekyll' }
-      },
-
-      reload: {
-        options: { message: 'Live Reload' }
       }
 
     },
@@ -64,6 +60,10 @@ module.exports = function(grunt) {
     // Watch
     watch: {
 
+      options: {
+        livereload: true
+      },
+
       css: {
         files: 'assets/scss/**/*',
         tasks: ['css:dev', 'notify:css'],
@@ -72,15 +72,8 @@ module.exports = function(grunt) {
       jekyll: {
         files: ["*.{yml,md,html}", "_*/**", "!_site/**/*"],
         tasks: ['jekyll:dev', 'notify:jekyll'],
-      },
-
-      reload: {
-        files: ["_site/**/*"],
-        tasks: ['notify:reload'],
-        options: {
-          livereload: true
-        }
       }
+
     }
 
 
