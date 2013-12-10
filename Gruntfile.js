@@ -1,7 +1,9 @@
 module.exports = function(grunt) {
+  
+  // load all grunt tasks
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
 
     // Sass
     sass: {
@@ -48,9 +50,6 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task.
   grunt.registerTask('dev',     ['sass:dev', 'jekyll:dev']);
