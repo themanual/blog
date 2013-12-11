@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 
       css: {
         files: 'assets/scss/**/*',
-        tasks: ['css:dev', 'notify:css'],
+        tasks: ['sass:dev', 'copy:css', 'notify:css'],
       },
 
       jekyll: {
@@ -80,15 +80,11 @@ module.exports = function(grunt) {
 
   });
 
-
-  // Tasks
-  grunt.registerTask('css:dev', ['sass:dev', 'copy:css']);
-
   // Build assets and jekyll
   grunt.registerTask('build:dev', ['sass:dev', 'jekyll:dev']);
 
   // Build for development, and watch
-  grunt.registerTask('work',      ['build:dev', 'watch'])
+  grunt.registerTask('work',      ['build:dev', 'watch']);
   grunt.registerTask('default',   'work');
 
 };
