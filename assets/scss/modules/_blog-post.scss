@@ -1,5 +1,5 @@
 .blog-post {
-  @include font-size-rem(20px);
+  font-size: 1rem;
   @include container-spacing(padding-bottom, 2/(20/25));
 
   + .blog-post {
@@ -7,10 +7,6 @@
     margin-top: 2em;
     padding-top: 1em;
   }
-}
-
-.blog-post > * {
-  max-width: 32em;
 }
 
 .blog-post-header {
@@ -36,7 +32,8 @@
 }
 
 .blog-post-title {
-  @include sans-serif(bold);
+  font-family: $type-sans;
+  font-weight: weight(bold);
   @include font-size-rem(40px);
   line-height: 1.25;
 
@@ -69,6 +66,14 @@
 .blog-post-body {
   line-height: 1.5;
   color: gray(20%);
+
+  > *:not(figure) {
+    max-width: 32rem;
+  }
+
+  .ie8 & > * {
+    max-width: 32*20;
+  }
   
   > * + *,
   blockquote > * + * {
@@ -83,6 +88,11 @@
     + * { margin-top: 0.5em; }
   }
 
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
   blockquote {
     border-left: solid 1px gray(20%);
     padding-left: 1.5em;
@@ -90,7 +100,8 @@
   }
 
   sup {
-    @include sans-serif(medium);
+    font-family: $type-sans;
+    font-weight: weight(medium);
     font-size: 0.65em;
     vertical-align: super;
     padding-left: 0.1em;
@@ -113,7 +124,7 @@
   }
 
   .footnotes {
-    @include sans-serif;
+    font-family: $type-sans;
     margin-top: 3em;
     color: gray(70%);
     

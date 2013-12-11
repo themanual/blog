@@ -6,6 +6,7 @@ $type-breaks:             1.5em;
 $type-line-height:        1.5;
 $type-main-value:         20;
 $type-main-size:          ($type-main-value * 1px);
+$rem-base:                20;
 
 @function weight($keyword) {
   @if      $keyword == thin                           { @return 100; }
@@ -21,29 +22,11 @@ $type-main-size:          ($type-main-value * 1px);
   @return 400;
 }
 
-@mixin sans-serif($options: book) {
-  
-  // defaults 
-  $font-weight: book;
-  $font-style:  normal;
-  
-  // Break the arguments
-  @if length($options) == 1 {
-    $option: nth($options, 1);
-    @if $option == italic { $font-style:  $option; } 
-    @else                 { $font-weight: $option; }
-  }
-  @else {
-    $font-weight: nth($options, 1);
-    $font-style:  nth($options, 2);
-  }
-
-  font-family:  $type-sans;
-  font-weight:  weight($font-weight);
-  font-style:   $font-style;
+@function strip-units($val) {
+  @return ($val / ($val * 0 + 1));
 }
 
-@function strip-units($val) {
+@function value($val) {
   @return ($val / ($val * 0 + 1));
 }
 

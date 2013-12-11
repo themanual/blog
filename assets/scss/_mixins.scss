@@ -40,7 +40,8 @@
 }
 
 @mixin issue-number {
-  @include sans-serif(bold);
+  font-family: $type-serif;
+  font-weight: weight(bold);
   @include color-by-issue(background);
   
   font-size: 0.85em;

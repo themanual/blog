@@ -533,7 +533,7 @@ a:hover, a:focus, a:active {
 .blog-sidebar > .box {
   font-size: 16px;
   font-size: 0.8rem;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 /* line 43, ../scss/modules/_blog.scss */
@@ -691,21 +691,74 @@ a:hover, a:focus, a:active {
 
 /* line 161, ../scss/modules/_blog.scss */
 .blog-sidebar-twitter {
-  margin-top: 2.5em;
+  margin-top: 4.5em;
 }
 
 /* line 165, ../scss/modules/_blog.scss */
 .blog-sidebar-text {
+  font-family: "freight-text-pro", serif;
   line-height: 1.4;
+  font-size: 0.85rem;
 }
-/* line 167, ../scss/modules/_blog.scss */
+/* line 169, ../scss/modules/_blog.scss */
 .blog-sidebar-text p + p {
   margin-top: 1em;
 }
 
+/* line 175, ../scss/modules/_blog.scss */
+.blog-sidebar-form input {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 15px;
+  font-size: 0.75rem;
+}
+/* line 180, ../scss/modules/_blog.scss */
+.blog-sidebar-form input[type='email'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  padding: 0.6em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+/* line 4, /Users/paulo/Development/themanual-blog/bower_components/garnish/src/helpers/_hover.scss */
+.blog-sidebar-form input[type='email']:hover, .blog-sidebar-form input[type='email']:focus {
+  outline: none;
+  border-color: black;
+}
+/* line 196, ../scss/modules/_blog.scss */
+.blog-sidebar-form input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 100%;
+  background: none;
+  color: #0055dd;
+  border: solid 1px #0055dd;
+  border-radius: 0.3em;
+  padding: 0.6em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  word-spacing: 0.1em;
+  font-weight: 500;
+}
+/* line 4, /Users/paulo/Development/themanual-blog/bower_components/garnish/src/helpers/_hover.scss */
+.blog-sidebar-form input[type='submit']:hover, .blog-sidebar-form input[type='submit']:focus {
+  border-color: black;
+  color: black;
+  outline: none;
+}
+
 /* line 1, ../scss/modules/_blog-post.scss */
 .blog-post {
-  font-size: 20px;
   font-size: 1rem;
   padding-bottom: 15.625%;
 }
@@ -717,17 +770,12 @@ a:hover, a:focus, a:active {
 }
 
 /* line 12, ../scss/modules/_blog-post.scss */
-.blog-post > * {
-  max-width: 32em;
-}
-
-/* line 16, ../scss/modules/_blog-post.scss */
 .blog-post-header {
   padding-top: 1em;
   padding-bottom: 2.5em;
 }
 
-/* line 21, ../scss/modules/_blog-post.scss */
+/* line 17, ../scss/modules/_blog-post.scss */
 .blog-post-topic {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
@@ -738,7 +786,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 0.7em;
   padding-top: 1.5em;
 }
-/* line 32, ../scss/modules/_blog-post.scss */
+/* line 28, ../scss/modules/_blog-post.scss */
 .blog-post-topic, .blog-post-topic a:link, .blog-post-topic a:visited {
   color: #a6a6a6;
 }
@@ -746,30 +794,29 @@ a:hover, a:focus, a:active {
 .blog-post-topic a:hover, .blog-post-topic a:focus, .blog-post-topic a:active {
   color: black;
 }
-/* line 35, ../scss/modules/_blog-post.scss */
+/* line 31, ../scss/modules/_blog-post.scss */
 .blog-main > .blog-post .blog-post-topic {
   padding-top: 0;
 }
 
-/* line 38, ../scss/modules/_blog-post.scss */
+/* line 34, ../scss/modules/_blog-post.scss */
 .blog-post-title {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 40px;
   font-size: 2rem;
   line-height: 1.25;
 }
-/* line 43, ../scss/modules/_blog-post.scss */
+/* line 40, ../scss/modules/_blog-post.scss */
 .blog-post-title a:link, .blog-post-title a:visited {
   color: black;
 }
-/* line 44, ../scss/modules/_blog-post.scss */
+/* line 41, ../scss/modules/_blog-post.scss */
 .blog-post-title a:hover, .blog-post-title a:focus {
   border-bottom: solid 1px;
 }
 
-/* line 47, ../scss/modules/_blog-post.scss */
+/* line 44, ../scss/modules/_blog-post.scss */
 .blog-post-byline {
   font-size: 17px;
   font-size: 0.85rem;
@@ -779,90 +826,100 @@ a:hover, a:focus, a:active {
   margin-top: 0.3rem;
 }
 
-/* line 58, ../scss/modules/_blog-post.scss */
+/* line 55, ../scss/modules/_blog-post.scss */
 .blog-post-author,
 .blog-post-date {
   color: #4d4d4d;
 }
 
-/* line 62, ../scss/modules/_blog-post.scss */
+/* line 59, ../scss/modules/_blog-post.scss */
 .blog-post-picture {
   margin-bottom: 2em;
 }
-/* line 64, ../scss/modules/_blog-post.scss */
+/* line 61, ../scss/modules/_blog-post.scss */
 .blog-post-picture img {
   max-width: 100%;
 }
-/* line 65, ../scss/modules/_blog-post.scss */
+/* line 62, ../scss/modules/_blog-post.scss */
 .blog-post-picture.with-border {
   border: solid 1px #e6e6e6;
 }
-/* line 66, ../scss/modules/_blog-post.scss */
+/* line 63, ../scss/modules/_blog-post.scss */
 .blog-post-picture.with-border-bottom {
   border-bottom: solid 1px #e6e6e6;
 }
 
-/* line 69, ../scss/modules/_blog-post.scss */
+/* line 66, ../scss/modules/_blog-post.scss */
 .blog-post-body {
   line-height: 1.5;
   color: #333333;
 }
+/* line 70, ../scss/modules/_blog-post.scss */
+.blog-post-body > *:not(figure) {
+  max-width: 32rem;
+}
 /* line 74, ../scss/modules/_blog-post.scss */
+.ie8 .blog-post-body > * {
+  max-width: 640;
+}
+/* line 79, ../scss/modules/_blog-post.scss */
 .blog-post-body > * + *,
 .blog-post-body blockquote > * + * {
   margin-top: 1em;
 }
-/* line 78, ../scss/modules/_blog-post.scss */
+/* line 83, ../scss/modules/_blog-post.scss */
 .blog-post-body > h2 {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
   color: black;
   margin-top: 2.5em;
 }
-/* line 83, ../scss/modules/_blog-post.scss */
+/* line 88, ../scss/modules/_blog-post.scss */
 .blog-post-body > h2 + * {
   margin-top: 0.5em;
 }
-/* line 86, ../scss/modules/_blog-post.scss */
+/* line 91, ../scss/modules/_blog-post.scss */
+.blog-post-body img {
+  display: block;
+  max-width: 100%;
+}
+/* line 96, ../scss/modules/_blog-post.scss */
 .blog-post-body blockquote {
   border-left: solid 1px #333333;
   padding-left: 1.5em;
   color: #666666;
 }
-/* line 92, ../scss/modules/_blog-post.scss */
+/* line 102, ../scss/modules/_blog-post.scss */
 .blog-post-body sup {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 0.65em;
   vertical-align: super;
   padding-left: 0.1em;
 }
-/* line 99, ../scss/modules/_blog-post.scss */
+/* line 110, ../scss/modules/_blog-post.scss */
 .blog-post-body ul, .blog-post-body ol {
   padding-left: 1.5em;
 }
-/* line 103, ../scss/modules/_blog-post.scss */
+/* line 114, ../scss/modules/_blog-post.scss */
 .blog-post-body ul {
   list-style-type: disc;
 }
-/* line 107, ../scss/modules/_blog-post.scss */
+/* line 118, ../scss/modules/_blog-post.scss */
 .blog-post-body ol {
   list-style-type: decimal;
 }
-/* line 111, ../scss/modules/_blog-post.scss */
+/* line 122, ../scss/modules/_blog-post.scss */
 .blog-post-body a {
   font-weight: 600;
 }
-/* line 115, ../scss/modules/_blog-post.scss */
+/* line 126, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes {
   font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 3em;
   color: #b3b3b3;
 }
-/* line 120, ../scss/modules/_blog-post.scss */
+/* line 131, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes:before {
   content: "";
   display: block;
@@ -871,12 +928,12 @@ a:hover, a:focus, a:active {
   background-color: #e6e6e6;
   margin-bottom: 1em;
 }
-/* line 129, ../scss/modules/_blog-post.scss */
+/* line 140, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes > ol {
   font-size: 0.75em;
   line-height: 1.4;
 }
-/* line 132, ../scss/modules/_blog-post.scss */
+/* line 143, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes > ol > li + li {
   margin-top: 0.5em;
 }
@@ -886,8 +943,6 @@ a:hover, a:focus, a:active {
   font-size: 16px;
   line-height: 1.2;
   font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* line 7, ../scss/modules/_keyword-list.scss */

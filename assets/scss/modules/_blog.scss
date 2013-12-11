@@ -35,7 +35,7 @@
   font-family: $type-sans;
   > .box {
     @include font-size-rem(16px);
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 }
 
@@ -159,12 +159,61 @@
 }
 
 .blog-sidebar-twitter {
-  margin-top: 2.5em;
+  margin-top: 4.5em;
 }
 
 .blog-sidebar-text {
+  font-family: $type-serif;
   line-height: 1.4;
+  font-size: rem(17);
   p + p {
     margin-top: 1em;
+  }
+}
+
+.blog-sidebar-form {
+  input {
+    font-family: $type-sans;
+    @include font-size-rem(15);
+  }
+
+  input[type='email'] {
+    @include appearance(none);
+    display: inline-block;
+    width: 100%;
+    
+    border: 1px solid darken($color-divider, 5%);
+    padding: 0.6em;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+
+    @include hover {
+      outline: none;
+      border-color: black;
+    }
+  }
+
+  input[type='submit'] {
+    @include appearance(none);
+    display: inline-block;
+    width: 100%;
+
+    background: none;
+    color: $color-link-blue-nicer;
+    border: solid 1px $color-link-blue-nicer;
+    border-radius: 0.3em;
+
+    padding: 0.6em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    word-spacing: 0.1em;
+    font-weight: weight(medium);
+
+    @include hover {
+      border-color: black;
+      color: black;
+      outline: none;
+    }
   }
 }
