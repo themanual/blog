@@ -2,7 +2,8 @@ name:         "The Manual: Blog"
 description:  "Blog of The Manual, a publication for web designers."
 permalink:    /:year/:month/:day/:title
 url:          http://blog.alwaysreadthemanual.com
-rss_url:      http://alwaysreadthemanual.com/blog
+rss_root:     http://alwaysreadthemanual.com/blog/
+rss_file:     feed.xml
 
 markdown: kramdown
 pygments: true
