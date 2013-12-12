@@ -869,27 +869,28 @@ a:hover, a:focus, a:active {
 }
 /* line 83, ../scss/modules/_blog-post.scss */
 .blog-post-body > h2 {
+  font-size: 1.25em;
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
   color: black;
   margin-top: 2.5em;
 }
-/* line 88, ../scss/modules/_blog-post.scss */
+/* line 89, ../scss/modules/_blog-post.scss */
 .blog-post-body > h2 + * {
   margin-top: 0.5em;
 }
-/* line 91, ../scss/modules/_blog-post.scss */
+/* line 92, ../scss/modules/_blog-post.scss */
 .blog-post-body img {
   display: block;
   max-width: 100%;
 }
-/* line 96, ../scss/modules/_blog-post.scss */
+/* line 97, ../scss/modules/_blog-post.scss */
 .blog-post-body blockquote {
   border-left: solid 1px #333333;
   padding-left: 1.5em;
   color: #666666;
 }
-/* line 102, ../scss/modules/_blog-post.scss */
+/* line 103, ../scss/modules/_blog-post.scss */
 .blog-post-body sup {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
@@ -897,29 +898,29 @@ a:hover, a:focus, a:active {
   vertical-align: super;
   padding-left: 0.1em;
 }
-/* line 110, ../scss/modules/_blog-post.scss */
+/* line 111, ../scss/modules/_blog-post.scss */
 .blog-post-body ul, .blog-post-body ol {
   padding-left: 1.5em;
 }
-/* line 114, ../scss/modules/_blog-post.scss */
+/* line 115, ../scss/modules/_blog-post.scss */
 .blog-post-body ul {
   list-style-type: disc;
 }
-/* line 118, ../scss/modules/_blog-post.scss */
+/* line 119, ../scss/modules/_blog-post.scss */
 .blog-post-body ol {
   list-style-type: decimal;
 }
-/* line 122, ../scss/modules/_blog-post.scss */
+/* line 123, ../scss/modules/_blog-post.scss */
 .blog-post-body a {
   font-weight: 600;
 }
-/* line 126, ../scss/modules/_blog-post.scss */
+/* line 127, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes {
   font-family: "franklin-gothic-urw", sans-serif;
   margin-top: 3em;
   color: #b3b3b3;
 }
-/* line 131, ../scss/modules/_blog-post.scss */
+/* line 132, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes:before {
   content: "";
   display: block;
@@ -928,12 +929,12 @@ a:hover, a:focus, a:active {
   background-color: #e6e6e6;
   margin-bottom: 1em;
 }
-/* line 140, ../scss/modules/_blog-post.scss */
+/* line 141, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes > ol {
   font-size: 0.75em;
   line-height: 1.4;
 }
-/* line 143, ../scss/modules/_blog-post.scss */
+/* line 144, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes > ol > li + li {
   margin-top: 0.5em;
 }
