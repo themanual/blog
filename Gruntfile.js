@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       },
 
       jekyll: {
-        files: ["*.{yml,md,html}", "_*/**", "!_site/**/*"],
+        files: ["*.{yml,md,html, xml}", "_*/**", "!_site/**/*"],
         tasks: ['jekyll:dev', 'notify:jekyll'],
       }
 
