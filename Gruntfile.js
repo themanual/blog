@@ -22,6 +22,13 @@ module.exports = function(grunt) {
       }
     },
 
+    cssmin: {
+      minify: {
+        src:  'assets/css/main.css',
+        dest: 'assets/css/main.min.css',
+      }
+    },
+
     concat: {
       js: {
         src: [
@@ -64,8 +71,8 @@ module.exports = function(grunt) {
 
     copy: {
       css: {
-        src: 'assets/css/main.css',
-        dest: '_site/assets/css/main.css'
+        src: 'assets/css/main.min.css',
+        dest: '_site/assets/css/main.min.css'
       },
 
       js: {
@@ -113,7 +120,7 @@ module.exports = function(grunt) {
   
   // Build CSS and JS
   // but do not copy or notify
-  grunt.registerTask('css:dev', ['sass:dev']);
+  grunt.registerTask('css:dev', ['sass:dev', 'cssmin:minify']);
   grunt.registerTask('js:dev',  ['concat:js', 'uglify']);
 
   // Build CSS, JS, and Jekyll
