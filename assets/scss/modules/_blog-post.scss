@@ -1,5 +1,4 @@
 .blog-post {
-  font-size: 1rem;
   @include container-spacing(padding-bottom, 2/(20/25));
 
   + .blog-post {
@@ -10,13 +9,13 @@
 }
 
 .blog-post-header {
-  padding-top: 1em;
+  padding-top:    1em;
   padding-bottom: 2.5em;
 }
 
 .blog-post-topic {
   font-family: $type-sans;
-  @include font-size-rem(15px);
+  @include rem(font-size, 15px);
   
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -34,7 +33,7 @@
 .blog-post-title {
   font-family: $type-sans;
   font-weight: weight(bold);
-  @include font-size-rem(40px);
+  @include rem(font-size, 40px);
   line-height: 1.25;
 
   a:link, a:visited { color: black; }
@@ -42,7 +41,7 @@
 }
 
 .blog-post-byline {
-  @include font-size-rem(17px);
+  @include rem(font-size, 17px);
   font-family: $type-sans;
   
   line-height: 1.2;
@@ -64,11 +63,12 @@
 }
 
 .blog-post-body {
+  
   line-height: 1.5;
   color: gray(20%);
 
   > *:not(figure) {
-    max-width: 32rem;
+    @include rem(max-width, 32rem);
   }
 
   .ie8 & > * {
@@ -131,7 +131,7 @@
 
   .footnotes {
     font-family: $type-sans;
-    margin-top: 3em;
+    margin-top: 10%;
     color: gray(70%);
     
     &:before {

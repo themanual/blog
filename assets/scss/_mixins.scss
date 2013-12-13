@@ -21,7 +21,7 @@
 
 @mixin smallcaps-heading-base {
   font-family: $type-sans;
-  @include font-size-rem(15px);
+  @include rem(font-size, 15px);
 
   text-transform: uppercase;
   letter-spacing: 0.1em;

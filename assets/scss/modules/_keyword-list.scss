@@ -1,5 +1,5 @@
 .keyword-list {
-  font-size: 16px;
+  @include rem(font-size, 16px);
   line-height: 1.2;
   font-family: $type-sans;
 }
@@ -21,7 +21,7 @@
 }
 
 .keyword-item-value-unit {
-  font-size: 12px;
+  @include rem(font-size, 12px);
   text-transform: uppercase;
   color: gray(70%);
 }

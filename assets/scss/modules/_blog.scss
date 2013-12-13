@@ -4,14 +4,25 @@
   @include container-spacing(padding-bottom,  1);
 }
 
-.blog-main {
-  @include span-columns(8);
+.site-header-name,
+.blog-main { 
+  @include media-from($bp-m) {
+    @include span-columns(8);
+  }
 }
 
-.blog-sidebar {
-  @include shift(1);
-  @include span-columns(3);
+.site-header-buy,
+.blog-sidebar     {
+  @include media-between($bp-m, $bp-l) {
+    @include span-columns(4);
+  }
+
+  @include media-from($bp-l) {
+    @include span-columns(3);
+    @include shift(1);
+  }
 }
+
 
 .blog-featured-posts {
   @include container-spacing(margin-bottom, 2);
@@ -34,7 +45,7 @@
   color: gray(40%);
   font-family: $type-sans;
   > .box {
-    @include font-size-rem(16px);
+    @include rem(font-size, 16px);
     margin-bottom: 3em;
   }
 }
@@ -54,7 +65,7 @@
 
 
 .blog-index {
-  @include font-size-rem(18px);
+  @include rem(font-size, 18px);
 }
 
 .blog-index-heading {
@@ -81,7 +92,7 @@
 }
 
 .blog-index-date {
-  @include font-size-rem(13px);
+  @include rem(font-size, 13px);
   @include smallcaps-heading-thin;
   float: right;
   margin-left: 2em;
@@ -95,7 +106,7 @@
   
   font-family: $type-sans;
   color: black;
-  @include font-size-rem(16px);
+  @include rem(font-size, 16px);
   padding: 0px;
   text-indent: 0px;
   padding-left: 2.5em;
@@ -144,16 +155,16 @@
   display: block;
   text-align: center;
   
-  padding: 1.5em;
+  @include rem(padding, 25px);
   
   border-radius: 6px;
   margin-right: 1em;
   &:last-child { margin-right: 0; }
 
+  @include rem(font-size, 17px);
   font-family: $type-sans;
   font-weight: weight(bold);
   text-transform: uppercase;
-  @include font-size-rem(17px);
   letter-spacing: 0.15em;
   word-spacing: 0.15em;
 }
@@ -165,7 +176,9 @@
 .blog-sidebar-text {
   font-family: $type-serif;
   line-height: 1.4;
-  font-size: rem(17);
+  
+  @include rem(font-size, 17px);
+
   p + p {
     margin-top: 1em;
   }
@@ -174,7 +187,7 @@
 .blog-sidebar-form {
   input {
     font-family: $type-sans;
-    @include font-size-rem(15);
+    @include rem(font-size, 15);
   }
 
   input[type='email'] {

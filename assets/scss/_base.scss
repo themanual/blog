@@ -1,7 +1,11 @@
 html, body {
   background-color: white;
   font-family: $type-serif;  
+  
   font-size: $type-main-size;
+  @include media-upto($bp-m) {
+    font-size: $type-main-size - 3;
+  }
 }
 
 figure img {

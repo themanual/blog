@@ -1,0 +1,17 @@
+@include media-upto($bp-m) {
+  .blog-post-title {
+    line-height: 1.1;
+  }
+
+  .blog-post-body {
+    line-height: 1.45;
+  }
+
+  .blog-sidebar {
+    @include container-spacing(margin-top, 2);
+  }
+
+  .blog-sidebar-twitter {
+    display: none;
+  }
+}

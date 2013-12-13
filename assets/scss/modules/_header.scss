@@ -6,22 +6,19 @@
 
 .site-header > div {
   @include grid-wrapper;
-  @include container-spacing(padding-top, 0.5);
-  @include container-spacing(padding-bottom, 0.5);
+
+  @include container-spacing(padding-top);
+  @include container-spacing(padding-bottom);
+  
+  @include media-from($bp-m) {
+    @include container-spacing(padding-top, 0.5);
+    @include container-spacing(padding-bottom, 0.5);
+  }
 }
 
 .site-header-name {
-  @include span-columns(9);
-}
-
-.site-header-buy {
-  @include span-columns(3);
-}
-
-.site-header-name {
-  float: left;
-  @include font-size-rem(32px);
-  line-height: 50px;
+  @include rem(font-size,   32px);
+  @include rem(line-height, 50px);
   font-weight: weight(bold);
   
   a { color: gray(20%); }
@@ -33,11 +30,16 @@
       &, i { color: black; }
     }
   }
+
+  @include media-upto($bp-m) {
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+
 }
 
-
 .site-header-buy > a {
-  @include font-size-rem(15px);
+  @include rem(font-size, 15px);
   text-transform: uppercase;
   text-align: center;
   
@@ -46,8 +48,8 @@
   border-radius: 5px;
 
 
-  height:       50px;
-  line-height:  (50px - 4);
+  @include rem(height, 50px);
+  @include rem(line-height, 50px - 4px);
 
   color: $color-link-blue-nicer;
   font-weight: weight(bold);

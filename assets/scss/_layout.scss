@@ -6,7 +6,7 @@
 
 @mixin wrapper {
   @include outer-container;
-  @include container-spacing(padding-left padding-right);
+  @include container-spacing(padding-left padding-right, 1);
 }
 
 @mixin grid-wrapper($direction: $default-layout-direction) {
