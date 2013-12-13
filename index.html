@@ -19,4 +19,7 @@ layout: default
   {% endfor %}
 </section>
 
+{% assign post_count = site.posts | size %}
+{% if post_count > 1 %}
 <a href="archive" class="blog-main-cta">Browse the archives</a>
+{% endif %}

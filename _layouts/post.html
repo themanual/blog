@@ -13,4 +13,8 @@ layout: default
   </div>
 </article>
 
-<a href="/" class="blog-main-cta">Read the most recent posts</a>
+
+{% assign post_count = site.posts | size %}
+{% if post_count > 1 %}
+<a href="/" class="blog-main-cta">Read more posts</a>
+{% endif %}
