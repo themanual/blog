@@ -5,6 +5,8 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
+    pkg: grunt.file.readJSON('package.json'),
+
     // Sass
     sass: {
       // Expanded, line numbers
@@ -20,7 +22,23 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      js: {
+        src: [
+          'bower_components/jquery/jquery.js',
+          'bower_components/fitvids/jquery.fitvids.js',
+          'assets/js/main.js'
+        ],
+        dest: 'assets/js/scripts.js'
+      }
+    },
 
+    uglify: {
+      dev: {
+        src:  'assets/js/scripts.js',
+        dest: 'assets/js/scripts.min.js'
+      }
+    },
 
     notify: {
       
@@ -28,8 +46,12 @@ module.exports = function(grunt) {
         title: 'Grunt'
       },
 
+      js: {
+        options: { message: 'Processed Javascript' }
+      },
+
       css: {
-        options: { message: 'Compiled CSS' }
+        options: { message: 'Processed CSS' }
       },
 
       jekyll: {
@@ -44,6 +66,11 @@ module.exports = function(grunt) {
       css: {
         src: 'assets/css/main.css',
         dest: '_site/assets/css/main.css'
+      },
+
+      js: {
+        src: 'assets/js/scripts.js',
+        dest: '_site/assets/js/scripts.js'
       }
     },
 
@@ -66,7 +93,12 @@ module.exports = function(grunt) {
 
       css: {
         files: 'assets/scss/**/*',
-        tasks: ['sass:dev', 'copy:css', 'notify:css'],
+        tasks: ['css:dev', 'copy:css', 'notify:css'],
+      },
+
+      js: {
+        files: ['assets/js/*.js', "!scripts.js"],
+        tasks: ['js:dev', 'copy:js', 'notify:js']
       },
 
       jekyll: {
@@ -77,14 +109,17 @@ module.exports = function(grunt) {
     }
 
 
-
   });
+  
+  // Build CSS and JS
+  // but do not copy or notify
+  grunt.registerTask('css:dev', ['sass:dev']);
+  grunt.registerTask('js:dev',  ['concat:js', 'uglify']);
 
-  // Build assets and jekyll
-  grunt.registerTask('build:dev', ['sass:dev', 'jekyll:dev']);
+  // Build CSS, JS, and Jekyll
+  grunt.registerTask('build:dev', ['css:dev', 'js:dev', 'jekyll:dev']);
 
   // Build for development, and watch
-  grunt.registerTask('work',      ['build:dev', 'watch']);
-  grunt.registerTask('default',   'work');
+  grunt.registerTask('default',   'build:dev');
 
 };
