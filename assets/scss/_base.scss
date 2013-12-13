@@ -3,6 +3,9 @@ html, body {
   font-family: $type-serif;  
   
   font-size: $type-main-size;
+  @include media-upto(900px) {
+    font-size: $type-main-size - 1;
+  }
   @include media-upto($bp-m) {
     font-size: $type-main-size - 2;
   }

@@ -4,25 +4,21 @@
   @include container-spacing(padding-bottom,  1);
 }
 
-.site-header-name,
 .blog-main { 
-  @include media-from($bp-m) {
+  @include media-from($bp-l) {
     @include span-columns(8);
   }
 }
 
-.site-header-buy,
-.blog-sidebar     {
-  @include media-between($bp-m, $bp-l) {
+.blog-sidebar {
+  @include media-from($bp-l) {
     @include span-columns(4);
   }
-
-  @include media-from($bp-l) {
+  @include media-from($bp-xl) {
     @include span-columns(3);
     @include shift(1);
   }
 }
-
 
 .blog-featured-posts {
   @include container-spacing(margin-bottom, 2);
@@ -66,6 +62,7 @@
 
 .blog-index {
   @include rem(font-size, 18px);
+  @include container-spacing(padding-bottom);
 }
 
 .blog-index-heading {
@@ -106,7 +103,7 @@
   display: block;
   text-align: center;
   
-  @include rem(padding, 25px);
+  @include rem(padding, 20px);
   
   border-radius: 6px;
   margin-right: 1em;

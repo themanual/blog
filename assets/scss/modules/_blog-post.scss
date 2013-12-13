@@ -1,15 +1,14 @@
 .blog-post {
-  @include container-spacing(padding-bottom, 2/(20/25));
+  @include container-spacing(padding-bottom);
 
   + .blog-post {
     border-top: divider();
-    margin-top: 2em;
-    padding-top: 1em;
+    @include container-spacing(margin-top, 2);
   }
 }
 
 .blog-post-header {
-  padding-top:    1em;
+  padding-top:    1.25em;
   padding-bottom: 2.5em;
 }
 
@@ -130,8 +129,8 @@
   }
 
   .footnotes {
+    @include container-spacing(margin-top);
     font-family: $type-sans;
-    margin-top: 10%;
     color: gray(70%);
     
     &:before {

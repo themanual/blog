@@ -10,9 +10,29 @@
   @include container-spacing(padding-top);
   @include container-spacing(padding-bottom);
   
-  @include media-from($bp-m) {
+  @include media-from($bp-l) {
     @include container-spacing(padding-top, 0.5);
     @include container-spacing(padding-bottom, 0.5);
+  }
+}
+
+.site-header-name {
+  @include media-from($bp-m) {
+    @include span-columns(7);
+  }
+
+  @include media-from($bp-l) {
+    @include span-columns(8);
+  }
+}
+
+.site-header-buy{
+  @include media-from($bp-m) { @include span-columns(5); }
+  @include media-from($bp-l) { @include span-columns(4); }
+
+  @include media-from($bp-xl) {
+    @include span-columns(3);
+    @include shift(1);
   }
 }
 

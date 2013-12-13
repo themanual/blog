@@ -6,12 +6,28 @@
   .blog-post-body {
     line-height: 1.45;
   }
+}
 
+@include media-upto($bp-l) {
   .blog-sidebar {
     @include container-spacing(margin-top, 2);
   }
 
   .blog-sidebar-twitter {
     display: none;
+  }
+}
+
+@include media-between($bp-m, $bp-l) {
+  .blog-sidebar {
+    @include row;
+  }
+
+  .blog-sidebar .box {
+    @include grid-half;
+    @include omega(2n);
+    &:nth-child(3) {
+      @include fill-parent;
+    }
   }
 }
