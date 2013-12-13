@@ -4,7 +4,7 @@ html, body {
   
   font-size: $type-main-size;
   @include media-upto($bp-m) {
-    font-size: $type-main-size - 3;
+    font-size: $type-main-size - 2;
   }
 }
 

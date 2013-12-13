@@ -262,7 +262,7 @@ html, body {
 @media screen and (max-width: 500px) {
   /* line 1, ../scss/_base.scss */
   html, body {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
