@@ -793,7 +793,7 @@ a:hover, a:focus, a:active {
 /* line 4, ../scss/modules/_blog-post.scss */
 .blog-post + .blog-post {
   border-top: solid 1px #e6e6e6;
-  margin-top: 12.5%;
+  margin-top: 6.25%;
 }
 
 /* line 10, ../scss/modules/_blog-post.scss */

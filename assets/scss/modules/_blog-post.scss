@@ -3,7 +3,7 @@
 
   + .blog-post {
     border-top: divider();
-    @include container-spacing(margin-top, 2);
+    @include container-spacing(margin-top);
   }
 }
 
