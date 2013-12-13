@@ -915,12 +915,17 @@ a:hover, a:focus, a:active {
   font-weight: 600;
 }
 /* line 127, ../scss/modules/_blog-post.scss */
+.blog-post-body .twitter-tweet-rendered {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+/* line 132, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes {
   font-family: "franklin-gothic-urw", sans-serif;
   margin-top: 3em;
   color: #b3b3b3;
 }
-/* line 132, ../scss/modules/_blog-post.scss */
+/* line 137, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes:before {
   content: "";
   display: block;
@@ -929,12 +934,12 @@ a:hover, a:focus, a:active {
   background-color: #e6e6e6;
   margin-bottom: 1em;
 }
-/* line 141, ../scss/modules/_blog-post.scss */
+/* line 146, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes > ol {
   font-size: 0.75em;
   line-height: 1.4;
 }
-/* line 144, ../scss/modules/_blog-post.scss */
+/* line 149, ../scss/modules/_blog-post.scss */
 .blog-post-body .footnotes > ol > li + li {
   margin-top: 0.5em;
 }
