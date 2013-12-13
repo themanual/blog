@@ -120,6 +120,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build:dev', ['css:dev', 'js:dev', 'jekyll:dev']);
 
   // Build for development, and watch
-  grunt.registerTask('default',   'build:dev');
+  grunt.registerTask('default',   ['build:dev', 'watch']);
 
 };
