@@ -34,7 +34,6 @@ module.exports = function(grunt) {
         src: [
           'bower_components/jquery/jquery.js',
           'bower_components/fitvids/jquery.fitvids.js',
-          'bower_components/analytics/analytics.js',
           'assets/js/main.js'
         ],
         dest: 'assets/js/scripts.js'
