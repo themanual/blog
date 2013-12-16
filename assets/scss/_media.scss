@@ -26,8 +26,5 @@
   .blog-sidebar .box {
     @include grid-half;
     @include omega(2n);
-    &:nth-child(3) {
-      @include fill-parent;
-    }
   }
 }
