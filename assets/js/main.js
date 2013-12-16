@@ -25,6 +25,8 @@ window.twttr = (function (d,s,id) {
 // Analytics Events
 analytics.ready(function() {
 
+  analytics.page('Blog');
+
   // Twitter Follow
   twttr.ready(function (twttr) {
     twttr.events.bind('follow', function(intent_event) {
