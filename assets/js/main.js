@@ -1,5 +1,5 @@
-// Thing
+/* global jQuery */
 
 (function($) {
-  $(".blog-post-body").fitVids();
+  $('.blog-post-body').fitVids();
 })(jQuery);
