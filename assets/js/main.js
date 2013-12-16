@@ -21,3 +21,23 @@ window.twttr = (function (d,s,id) {
 }(document, "script", "twitter-wjs"));
 
 
+
+// Analytics Events
+analytics.ready(function() {
+
+  // Twitter Follow
+  twttr.ready(function (twttr) {
+    twttr.events.bind('follow', function(intent_event) {
+      analytics.track('Twitter: Follow');
+    });
+  });
+
+  // Form Subscription
+  analytics.trackForm($('#sidebar-subscribe-form'), 'Subscribed Blog Newsletter');
+
+  // Shop Visit
+  analytics.trackLink($('.site-header-buy a'),  'Clicked Link: Store');
+  analytics.trackLink($('.link-rss'),           'Clicked Link: RSS');
+  analytics.trackLink($('.link-twitter'),       'Clicked Link: Twitter');
+
+});
