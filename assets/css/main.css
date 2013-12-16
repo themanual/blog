@@ -622,28 +622,36 @@ a:hover, a:focus, a:active {
 .blog-sidebar > .box {
   font-size: 16px;
   font-size: 0.8rem;
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
+}
+/* line 48, ../scss/modules/_blog.scss */
+.blog-sidebar .box-title--lined {
+  margin-bottom: 1em;
+}
+/* line 52, ../scss/modules/_blog.scss */
+.blog-sidebar iframe.twitter-follow-button {
+  margin-top: 1em;
 }
 
-/* line 50, ../scss/modules/_blog.scss */
+/* line 58, ../scss/modules/_blog.scss */
 .blog mark {
   background: #FFFF00;
   color: black;
 }
 
-/* line 57, ../scss/modules/_blog.scss */
+/* line 65, ../scss/modules/_blog.scss */
 .blog-posts .box-title, .blog-posts .box-title--lined {
   margin-bottom: 0;
 }
 
-/* line 63, ../scss/modules/_blog.scss */
+/* line 71, ../scss/modules/_blog.scss */
 .blog-index {
   font-size: 18px;
   font-size: 0.9rem;
   padding-bottom: 6.25%;
 }
 
-/* line 68, ../scss/modules/_blog.scss */
+/* line 76, ../scss/modules/_blog.scss */
 .blog-index-heading {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
@@ -655,17 +663,17 @@ a:hover, a:focus, a:active {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 72, ../scss/modules/_blog.scss */
+/* line 80, ../scss/modules/_blog.scss */
 * + .blog-index-heading {
   margin-top: 3em;
 }
 
-/* line 75, ../scss/modules/_blog.scss */
+/* line 83, ../scss/modules/_blog.scss */
 .blog-index-list > li {
   margin-bottom: 1.5em;
 }
 
-/* line 79, ../scss/modules/_blog.scss */
+/* line 87, ../scss/modules/_blog.scss */
 .blog-index-title {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
@@ -673,13 +681,13 @@ a:hover, a:focus, a:active {
   line-height: 1.3;
 }
 
-/* line 86, ../scss/modules/_blog.scss */
+/* line 94, ../scss/modules/_blog.scss */
 .blog-index-synopsis {
   line-height: 1.4;
   color: #666666;
 }
 
-/* line 91, ../scss/modules/_blog.scss */
+/* line 99, ../scss/modules/_blog.scss */
 .blog-index-date {
   font-size: 13px;
   font-size: 0.65rem;
@@ -694,7 +702,7 @@ a:hover, a:focus, a:active {
   margin-left: 2em;
 }
 
-/* line 99, ../scss/modules/_blog.scss */
+/* line 107, ../scss/modules/_blog.scss */
 .blog-main-cta {
   border: solid 1px #e6e6e6;
   border-width: 2px;
@@ -712,35 +720,41 @@ a:hover, a:focus, a:active {
   letter-spacing: 0.15em;
   word-spacing: 0.15em;
 }
-/* line 110, ../scss/modules/_blog.scss */
+/* line 118, ../scss/modules/_blog.scss */
 .blog-main-cta:last-child {
   margin-right: 0;
 }
 
-/* line 120, ../scss/modules/_blog.scss */
-.blog-sidebar-twitter {
-  margin-top: 4.5em;
+/* line 128, ../scss/modules/_blog.scss */
+.blog-sidebar-subtitle {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 15px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.15em;
+  color: #999999;
 }
 
-/* line 124, ../scss/modules/_blog.scss */
+/* line 132, ../scss/modules/_blog.scss */
 .blog-sidebar-text {
   font-family: "freight-text-pro", serif;
   line-height: 1.4;
   font-size: 17px;
   font-size: 0.85rem;
 }
-/* line 130, ../scss/modules/_blog.scss */
+/* line 138, ../scss/modules/_blog.scss */
 .blog-sidebar-text p + p {
   margin-top: 1em;
 }
 
-/* line 136, ../scss/modules/_blog.scss */
+/* line 144, ../scss/modules/_blog.scss */
 .blog-sidebar-form input {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
   font-size: 0.75rem;
 }
-/* line 141, ../scss/modules/_blog.scss */
+/* line 149, ../scss/modules/_blog.scss */
 .blog-sidebar-form input[type='email'] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -759,7 +773,7 @@ a:hover, a:focus, a:active {
   outline: none;
   border-color: black;
 }
-/* line 157, ../scss/modules/_blog.scss */
+/* line 165, ../scss/modules/_blog.scss */
 .blog-sidebar-form input[type='submit'] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1081,9 +1095,5 @@ a:hover, a:focus, a:active {
   /* line 75, /Users/paulo/Development/themanual-blog/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
   .blog-sidebar .box:nth-child(2n+1) {
     clear: left;
-  }
-  /* line 29, ../scss/_media.scss */
-  .blog-sidebar .box:nth-child(3) {
-    width: 100%;
   }
 }
