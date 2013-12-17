@@ -8920,7 +8920,7 @@ function isMeta (e) {
   return false;
 }
 
-$.fn.trackLink = function(category, action) {
+$.fn.eventLink = function(category, action) {
   return this.each(function() {
     $(this).click(function(ev) {
       var el = this;
@@ -8930,6 +8930,24 @@ $.fn.trackLink = function(category, action) {
         ga('send', 'event', {
           'eventCategory':  category,
           'eventAction':    action,
+          'hitCallback':    function() { window.location.href = el.href; }
+        });
+      }
+    });
+  });
+};
+
+$.fn.socialLink = function(network, action, target) {
+  return this.each(function() {
+    $(this).click(function(ev) {
+      var el = this;
+      // only act if triggered by user and analytics loaded
+      if (ev.originalEvent && ga.create && el.href && el.target !== '_blank') {
+        ev.preventDefault();
+        ga('send', 'social', {
+          'socialNetwork':  network,
+          'socialAction':   action,
+          'socialTarget':   target,
           'hitCallback':    function() { window.location.href = el.href; }
         });
       }
@@ -8966,16 +8984,16 @@ window.twttr = (function (d,s,id) {
 // Track twitter follows
 twttr.ready(function (twttr) {
   twttr.events.bind('follow', function(intent_event) {
-    ga('send', 'social', 'twitter', 'follow');
+    ga('send', 'social', 'Twitter', 'Follow', '@themanual');
   });
 });
 
 // Track newsletter subscriptions
 $('#sidebar-subscribe-form').submit(function() {
-  ga('send', 'event', 'blog newsletter', 'subscribed');
+  ga('send', 'event', 'Newsletter - Blog', 'Subscribe');
 });
 
-// Track important outbound links
-$('.site-header-buy a').trackLink('store link', 'click');
-$('.link-rss').trackLink('rss', 'subscribe');
-$('.link-twitter').trackLink('twitter link', 'click');
+// Track other interactions
+$('.site-header-buy a').eventLink('Store', 'Visit');
+$('.link-rss').eventLink('RSS', 'Subscribe');
+$('.link-twitter').socialLink('Twitter', 'Visit Profile', '@themanual');
