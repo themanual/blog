@@ -40,6 +40,18 @@ module.exports = function(grunt) {
       }
     },
 
+    jshint: {
+      files: ['Gruntfile.js', 'assets/js/main.js'],
+      options: {
+        expr: true,
+        sub: true,
+        globals: {
+          jQuery: true,
+          console: true
+        }
+      }
+    },
+
     uglify: {
       dev: {
         src:  'assets/js/scripts.js',
@@ -121,7 +133,7 @@ module.exports = function(grunt) {
   // Build CSS and JS
   // but do not copy or notify
   grunt.registerTask('css:dev', ['sass:dev', 'cssmin:minify']);
-  grunt.registerTask('js:dev',  ['concat:js', 'uglify']);
+  grunt.registerTask('js:dev',  ['jshint', 'concat:js', 'uglify']);
 
   // Build CSS, JS, and Jekyll
   grunt.registerTask('build:dev', ['css:dev', 'js:dev', 'jekyll:dev']);
