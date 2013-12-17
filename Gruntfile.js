@@ -7,41 +7,52 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // Sass
+
+
+    // CSS:
+    // * Sass
+    // * Minify
+
     sass: {
-      // Expanded, line numbers
       dev: {
         options: {
           style:        'expanded',
           lineNumbers:  'true',
           loadPath:     ['bower_components']
         },
-        files: {
-          'assets/css/main.css': 'assets/scss/main.scss'
-        }
+        files: [
+          {
+            expand: true,
+            cwd:  'assets/css/src/',
+            src:  ['*.scss', '!_*.scss'],
+            dest: 'assets/css/build/',
+            ext:  '.css'
+          }
+        ]
       }
     },
 
     cssmin: {
       minify: {
-        src:  'assets/css/main.css',
-        dest: 'assets/css/main.min.css',
+        expand: true,
+        cwd:  'assets/css/build/',
+        src:  ['*.css', '!*.min.css'],
+        dest: 'assets/css/build/',
+        ext:  '.min.css'
       }
     },
 
-    concat: {
-      js: {
-        src: [
-          'bower_components/jquery/jquery.js',
-          'bower_components/fitvids/jquery.fitvids.js',
-          'assets/js/main.js'
-        ],
-        dest: 'assets/js/scripts.js'
-      }
-    },
+
+
+
+
+    // JS:
+    // * Hint
+    // * Concat
+    // * Minify
 
     jshint: {
-      files: ['Gruntfile.js', 'assets/js/main.js'],
+      files: ['Gruntfile.js', 'assets/js/src/*.js'],
       options: {
         expr: true,
         sub: true,
@@ -52,46 +63,66 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      js: {
+        src: [
+          'bower_components/jquery/jquery.js',
+          'bower_components/fitvids/jquery.fitvids.js',
+          'assets/js/src/main.js'
+        ],
+        dest: 'assets/js/build/scripts.js'
+      }
+    },
+
     uglify: {
       dev: {
-        src:  'assets/js/scripts.js',
-        dest: 'assets/js/scripts.min.js'
+        expand: true,
+        cwd:    'assets/js/build/',
+        src:    ['*.js', "!*.min.js"],
+        dest:   'assets/js/build/',
+        ext:    '.min.js'
+      }
+    },
+
+    
+
+
+
+    // Reload-realted Tasks:
+    // * Copy assets on the fly
+    // * Display notifications
+    copy: {
+      css: {
+        expand: true,
+        cwd:    'assets/css/build/',
+        src:    '*.css',
+        dest:   '_site/assets/css/build/'
+      },
+
+      js: {
+        expand: true,
+        cwd:    'assets/js/build/',
+        src:    '*.js',
+        dest:   '_site/assets/js/build/'
       }
     },
 
     notify: {
-      
       options: {
         title: 'Grunt'
       },
-
       js: {
         options: { message: 'Processed Javascript' }
       },
-
       css: {
         options: { message: 'Processed CSS' }
       },
-
       jekyll: {
         options: { message: 'Built Jekyll' }
       }
-
     },
 
 
-
-    copy: {
-      css: {
-        src: 'assets/css/main.min.css',
-        dest: '_site/assets/css/main.min.css'
-      },
-
-      js: {
-        src: 'assets/js/scripts.js',
-        dest: '_site/assets/js/scripts.js'
-      }
-    },
 
 
 
@@ -111,12 +142,12 @@ module.exports = function(grunt) {
       },
 
       css: {
-        files: 'assets/scss/**/*',
+        files: 'assets/css/src/**/*',
         tasks: ['css:dev', 'copy:css', 'notify:css'],
       },
 
       js: {
-        files: ['assets/js/*.js', "!scripts.js"],
+        files: ['assets/js/src/**/*'],
         tasks: ['js:dev', 'copy:js', 'notify:js']
       },
 
