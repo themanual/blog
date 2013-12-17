@@ -8954,14 +8954,6 @@ $.fn.socialLink = function(network, action, target) {
     });
   });
 };
-
-
-
-// Init fitVids
-$('.blog-post-body').fitVids();
-
-
-
 // Init GA
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),
@@ -8971,7 +8963,6 @@ ga('create', 'UA-46481984-1', 'auto');
 ga('send', 'pageview');
 
 
-
 // Init Twitter
 window.twttr = (function (d,s,id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
@@ -8979,7 +8970,8 @@ window.twttr = (function (d,s,id) {
   js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
   return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f); } });
 }(document, "script", "twitter-wjs"));
-
+// Init fitVids
+$('.blog-post-body').fitVids();
 
 // Track twitter follows
 twttr.ready(function (twttr) {
