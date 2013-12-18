@@ -50,7 +50,7 @@ Then, build the site with `jekyll build --drafts --future`. This includes drafts
 
 To launch a local server do `jekyll server --watch --drafts --future` and open `http://0.0.0.0:4000`.
 
-## Developing the blog
+## Development
 
 ### Setup
 
@@ -60,7 +60,7 @@ To launch a local server do `jekyll server --watch --drafts --future` and open `
 4. Install Grunt and its plugins with `npm install`
 5. Install Bower components with `bower install`
 
-### Developing
+### Working
 
 1. Point a local webserver to the `_site` folder.
 2. Run Grunt with `grunt`. It defaults to watch mode.
