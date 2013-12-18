@@ -17,7 +17,6 @@ module.exports = function(grunt) {
       dev: {
         options: {
           style:        'expanded',
-          lineNumbers:  'true',
           loadPath:     ['bower_components']
         },
         files: [
@@ -169,9 +168,9 @@ module.exports = function(grunt) {
   grunt.registerTask('js:dev',  ['jshint', 'concat:js', 'uglify']);
 
   // Build CSS, JS, and Jekyll
-  grunt.registerTask('build:dev', ['css:dev', 'js:dev', 'jekyll:dev']);
+  grunt.registerTask('build', ['css:dev', 'js:dev', 'jekyll:dev']);
 
   // Build for development, and watch
-  grunt.registerTask('default',   ['build:dev', 'watch']);
+  grunt.registerTask('default',   ['build', 'watch']);
 
 };
