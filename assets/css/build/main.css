@@ -160,14 +160,14 @@ textarea {
   box-sizing: border-box;
 }
 
-/* line 25, ../src/_layout.scss */
+/* line 28, ../src/_layout.scss */
 .wrapper {
   *zoom: 1;
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .wrapper:before, .wrapper:after {
@@ -178,8 +178,20 @@ textarea {
 .wrapper:after {
   clear: both;
 }
+@media screen and (min-width: 1251px) {
+  /* line 28, ../src/_layout.scss */
+  .wrapper {
+    padding-left: 75px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  /* line 28, ../src/_layout.scss */
+  .wrapper {
+    padding-right: 75px;
+  }
+}
 
-/* line 27, ../src/_layout.scss */
+/* line 30, ../src/_layout.scss */
 .g-row {
   *zoom: 1;
   display: block;
@@ -194,14 +206,14 @@ textarea {
   clear: both;
 }
 
-/* line 28, ../src/_layout.scss */
+/* line 31, ../src/_layout.scss */
 .g-wrapper {
   *zoom: 1;
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 6%;
+  padding-right: 6%;
   *zoom: 1;
   display: block;
 }
@@ -214,6 +226,18 @@ textarea {
 .g-wrapper:after {
   clear: both;
 }
+@media screen and (min-width: 1251px) {
+  /* line 31, ../src/_layout.scss */
+  .g-wrapper {
+    padding-left: 75px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  /* line 31, ../src/_layout.scss */
+  .g-wrapper {
+    padding-right: 75px;
+  }
+}
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .g-wrapper:before, .g-wrapper:after {
   content: " ";
@@ -224,12 +248,12 @@ textarea {
   clear: both;
 }
 
-/* line 30, ../src/_layout.scss */
+/* line 33, ../src/_layout.scss */
 .g-total {
   width: 100%;
 }
 
-/* line 31, ../src/_layout.scss */
+/* line 34, ../src/_layout.scss */
 .g-half {
   float: left;
   display: block;
@@ -241,7 +265,7 @@ textarea {
   margin-right: 0;
 }
 
-/* line 32, ../src/_layout.scss */
+/* line 35, ../src/_layout.scss */
 .g-third {
   float: left;
   display: block;
@@ -342,12 +366,12 @@ a:hover, a:focus, a:active {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 6%;
+  padding-right: 6%;
   *zoom: 1;
   display: block;
-  padding-top: 6.25%;
-  padding-bottom: 6.25%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .site-header > div:before, .site-header > div:after {
@@ -358,6 +382,18 @@ a:hover, a:focus, a:active {
 .site-header > div:after {
   clear: both;
 }
+@media screen and (min-width: 1251px) {
+  /* line 7, ../src/modules/_header.scss */
+  .site-header > div {
+    padding-left: 75px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  /* line 7, ../src/modules/_header.scss */
+  .site-header > div {
+    padding-right: 75px;
+  }
+}
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .site-header > div:before, .site-header > div:after {
   content: " ";
@@ -366,12 +402,36 @@ a:hover, a:focus, a:active {
 /* line 23, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .site-header > div:after {
   clear: both;
+}
+@media screen and (min-width: 1251px) {
+  /* line 7, ../src/modules/_header.scss */
+  .site-header > div {
+    padding-top: 75px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  /* line 7, ../src/modules/_header.scss */
+  .site-header > div {
+    padding-bottom: 75px;
+  }
 }
 @media screen and (min-width: 801px) {
   /* line 7, ../src/modules/_header.scss */
   .site-header > div {
-    padding-top: 3.125%;
-    padding-bottom: 3.125%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+@media screen and (min-width: 801px) and (min-width: 1251px) {
+  /* line 7, ../src/modules/_header.scss */
+  .site-header > div {
+    padding-top: 37.5px;
+  }
+}
+@media screen and (min-width: 801px) and (min-width: 1251px) {
+  /* line 7, ../src/modules/_header.scss */
+  .site-header > div {
+    padding-bottom: 37.5px;
   }
 }
 
@@ -505,12 +565,12 @@ a:hover, a:focus, a:active {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 6%;
+  padding-right: 6%;
   *zoom: 1;
   display: block;
-  padding-top: 3.125%;
-  padding-bottom: 6.25%;
+  padding-top: 3%;
+  padding-bottom: 6%;
 }
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .blog > div:before, .blog > div:after {
@@ -521,6 +581,18 @@ a:hover, a:focus, a:active {
 .blog > div:after {
   clear: both;
 }
+@media screen and (min-width: 1251px) {
+  /* line 1, ../src/modules/_blog.scss */
+  .blog > div {
+    padding-left: 75px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  /* line 1, ../src/modules/_blog.scss */
+  .blog > div {
+    padding-right: 75px;
+  }
+}
 /* line 18, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .blog > div:before, .blog > div:after {
   content: " ";
@@ -529,6 +601,18 @@ a:hover, a:focus, a:active {
 /* line 23, /Users/paulo/Development/themanual-blog/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .blog > div:after {
   clear: both;
+}
+@media screen and (min-width: 1251px) {
+  /* line 1, ../src/modules/_blog.scss */
+  .blog > div {
+    padding-top: 37.5px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  /* line 1, ../src/modules/_blog.scss */
+  .blog > div {
+    padding-bottom: 75px;
+  }
 }
 
 @media screen and (min-width: 801px) {
@@ -575,7 +659,13 @@ a:hover, a:focus, a:active {
 
 /* line 23, ../src/modules/_blog.scss */
 .blog-featured-posts {
-  margin-bottom: 12.5%;
+  margin-bottom: 12%;
+}
+@media screen and (min-width: 1251px) {
+  /* line 23, ../src/modules/_blog.scss */
+  .blog-featured-posts {
+    margin-bottom: 150px;
+  }
 }
 
 /* line 27, ../src/modules/_blog.scss */
@@ -613,45 +703,51 @@ a:hover, a:focus, a:active {
   color: black;
 }
 
-/* line 40, ../src/modules/_blog.scss */
+/* line 39, ../src/modules/_blog.scss */
 .blog-sidebar {
   color: #666666;
   font-family: "franklin-gothic-urw", sans-serif;
 }
-/* line 43, ../src/modules/_blog.scss */
+/* line 42, ../src/modules/_blog.scss */
 .blog-sidebar > .box {
   font-size: 16px;
   font-size: 0.8rem;
   margin-bottom: 2.5em;
 }
-/* line 48, ../src/modules/_blog.scss */
+/* line 47, ../src/modules/_blog.scss */
 .blog-sidebar .box-title--lined {
   margin-bottom: 1em;
 }
-/* line 52, ../src/modules/_blog.scss */
+/* line 51, ../src/modules/_blog.scss */
 .blog-sidebar iframe.twitter-follow-button {
   margin-top: 1em;
 }
 
-/* line 58, ../src/modules/_blog.scss */
+/* line 57, ../src/modules/_blog.scss */
 .blog mark {
   background: #FFFF00;
   color: black;
 }
 
-/* line 65, ../src/modules/_blog.scss */
+/* line 64, ../src/modules/_blog.scss */
 .blog-posts .box-title, .blog-posts .box-title--lined {
   margin-bottom: 0;
 }
 
-/* line 71, ../src/modules/_blog.scss */
+/* line 70, ../src/modules/_blog.scss */
 .blog-index {
   font-size: 18px;
   font-size: 0.9rem;
-  padding-bottom: 6.25%;
+  padding-bottom: 6%;
+}
+@media screen and (min-width: 1251px) {
+  /* line 70, ../src/modules/_blog.scss */
+  .blog-index {
+    padding-bottom: 75px;
+  }
 }
 
-/* line 76, ../src/modules/_blog.scss */
+/* line 75, ../src/modules/_blog.scss */
 .blog-index-heading {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
@@ -663,17 +759,17 @@ a:hover, a:focus, a:active {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 80, ../src/modules/_blog.scss */
+/* line 79, ../src/modules/_blog.scss */
 * + .blog-index-heading {
   margin-top: 3em;
 }
 
-/* line 83, ../src/modules/_blog.scss */
+/* line 82, ../src/modules/_blog.scss */
 .blog-index-list > li {
   margin-bottom: 1.5em;
 }
 
-/* line 87, ../src/modules/_blog.scss */
+/* line 86, ../src/modules/_blog.scss */
 .blog-index-title {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
@@ -681,13 +777,13 @@ a:hover, a:focus, a:active {
   line-height: 1.3;
 }
 
-/* line 94, ../src/modules/_blog.scss */
+/* line 93, ../src/modules/_blog.scss */
 .blog-index-synopsis {
   line-height: 1.4;
   color: #666666;
 }
 
-/* line 99, ../src/modules/_blog.scss */
+/* line 98, ../src/modules/_blog.scss */
 .blog-index-date {
   font-size: 13px;
   font-size: 0.65rem;
@@ -702,7 +798,7 @@ a:hover, a:focus, a:active {
   margin-left: 2em;
 }
 
-/* line 107, ../src/modules/_blog.scss */
+/* line 106, ../src/modules/_blog.scss */
 .blog-main-cta {
   border: solid 1px #e6e6e6;
   border-width: 2px;
@@ -720,12 +816,12 @@ a:hover, a:focus, a:active {
   letter-spacing: 0.15em;
   word-spacing: 0.15em;
 }
-/* line 118, ../src/modules/_blog.scss */
+/* line 117, ../src/modules/_blog.scss */
 .blog-main-cta:last-child {
   margin-right: 0;
 }
 
-/* line 128, ../src/modules/_blog.scss */
+/* line 127, ../src/modules/_blog.scss */
 .blog-sidebar-subtitle {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
@@ -736,25 +832,25 @@ a:hover, a:focus, a:active {
   color: #999999;
 }
 
-/* line 132, ../src/modules/_blog.scss */
+/* line 131, ../src/modules/_blog.scss */
 .blog-sidebar-text {
   font-family: "freight-text-pro", serif;
   line-height: 1.4;
   font-size: 17px;
   font-size: 0.85rem;
 }
-/* line 138, ../src/modules/_blog.scss */
+/* line 137, ../src/modules/_blog.scss */
 .blog-sidebar-text p + p {
   margin-top: 1em;
 }
 
-/* line 144, ../src/modules/_blog.scss */
+/* line 143, ../src/modules/_blog.scss */
 .blog-sidebar-form input {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 15px;
   font-size: 0.75rem;
 }
-/* line 149, ../src/modules/_blog.scss */
+/* line 148, ../src/modules/_blog.scss */
 .blog-sidebar-form input[type='email'] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -773,7 +869,7 @@ a:hover, a:focus, a:active {
   outline: none;
   border-color: black;
 }
-/* line 165, ../src/modules/_blog.scss */
+/* line 164, ../src/modules/_blog.scss */
 .blog-sidebar-form input[type='submit'] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -802,12 +898,24 @@ a:hover, a:focus, a:active {
 
 /* line 1, ../src/modules/_blog-post.scss */
 .blog-post {
-  padding-bottom: 6.25%;
+  padding-bottom: 6%;
+}
+@media screen and (min-width: 1251px) {
+  /* line 1, ../src/modules/_blog-post.scss */
+  .blog-post {
+    padding-bottom: 75px;
+  }
 }
 /* line 4, ../src/modules/_blog-post.scss */
 .blog-post + .blog-post {
   border-top: solid 1px #e6e6e6;
-  margin-top: 6.25%;
+  margin-top: 6%;
+}
+@media screen and (min-width: 1251px) {
+  /* line 4, ../src/modules/_blog-post.scss */
+  .blog-post + .blog-post {
+    margin-top: 75px;
+  }
 }
 
 /* line 10, ../src/modules/_blog-post.scss */
@@ -963,9 +1071,15 @@ a:hover, a:focus, a:active {
 }
 /* line 131, ../src/modules/_blog-post.scss */
 .blog-post-body .footnotes {
-  margin-top: 6.25%;
+  margin-top: 6%;
   font-family: "franklin-gothic-urw", sans-serif;
   color: #b3b3b3;
+}
+@media screen and (min-width: 1251px) {
+  /* line 131, ../src/modules/_blog-post.scss */
+  .blog-post-body .footnotes {
+    margin-top: 75px;
+  }
 }
 /* line 136, ../src/modules/_blog-post.scss */
 .blog-post-body .footnotes:before {
@@ -1053,14 +1167,20 @@ a:hover, a:focus, a:active {
 @media screen and (max-width: 800px) {
   /* line 12, ../src/_media.scss */
   .blog-sidebar {
-    margin-top: 12.5%;
+    margin-top: 12%;
   }
-
   /* line 16, ../src/_media.scss */
   .blog-sidebar-twitter {
     display: none;
   }
 }
+@media screen and (max-width: 800px) and (min-width: 1251px) {
+  /* line 12, ../src/_media.scss */
+  .blog-sidebar {
+    margin-top: 150px;
+  }
+}
+
 @media screen and (min-width: 601px) and (max-width: 800px) {
   /* line 22, ../src/_media.scss */
   .blog-sidebar {

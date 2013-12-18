@@ -33,7 +33,6 @@
 
 .blog a {
   &:link, &:visited { color: $color-link-blue-nicer; }
-  // &:visited { color: #AA22AA; }
   @include colored-link;
 }
 
