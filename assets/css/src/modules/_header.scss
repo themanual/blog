@@ -46,7 +46,6 @@
     
   a { 
     @include hover { 
-      border-bottom: solid 1px;
       &, i { color: black; }
     }
   }
