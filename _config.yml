@@ -11,9 +11,7 @@ pygments: true
 include:  ['.htaccess']
 exclude:  [
   'package.json', 
-  'node_modules', 
   'bower.json',
-  'bower_components', 
-  'Gruntfile.js',
-  'scss',
+  'node_modules', 
+  'bower_components',
   'README.md']
