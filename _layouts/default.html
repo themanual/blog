@@ -28,6 +28,12 @@
   <meta property="og:description" content="{{ page.synopsis }}" />
   <meta property="article:author" content="{{ page.author.name }}" />
   <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
+  {% else %}
+  <meta name="twitter:title" content="{{ site.name }}{% if page.title %} — {{page.title}}{% endif %}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:title" content="{{ site.name }}{% if page.title %} — {{page.title}}{% endif %}" />
+  <meta property="og:description" content="{{ site.synopsis }}" />
   {% endif %}
   
   <!-- JS -->
