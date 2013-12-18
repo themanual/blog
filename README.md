@@ -50,24 +50,18 @@ Then, build the site with `jekyll build --drafts --future`. This includes drafts
 
 To launch a local server do `jekyll server --watch --drafts --future` and open `http://0.0.0.0:4000`.
 
-## Developing the site
+## Developing the blog
 
-You'll need:
+### Setup
 
-* Node.js and NPM
-* Bower: `npm install -g bower`
-* Sass: `gem install sass`
+1. Install [Node.js](http://nodejs.org/download/).
+2. Go to the project root.
+3. Install Bower with `npm install -g bower`
+4. Install Grunt and its plugins with `npm install`
+5. Install Bower components with `bower install`
 
-## Instructions
+### Developing
 
-First, install all the NPM modules required in `package.json`:
-
-`npm install`
-
-Then, install all the Bower components required in `bower.json`:
-
-`bower install`
-
-Then build and watch the site with Grunt:
-
-`grunt`
+1. Point a local webserver to the `_site` folder.
+2. Run Grunt with `grunt`. It defaults to watch mode.
+3. You may want to install the [LiveReload browser extensions](http://go.livereload.com/extensions).
