@@ -1,0 +1,25 @@
+/* TEAM */
+
+Publisher/Owner: Andy McMillan
+URL: http://goodonpaper.com
+Twitter: @andymcmillan
+Location: Belfast / Portland, OR
+
+Designer/Developer: Paulo Pereira
+URL: http://paulozoom.com
+Twitter: @paulozoom
+Location: Berlin, Germany
+
+
+/* SITE */
+
+Hosting: GitHub Pages
+Software: MAMP, Jekyll, Grunt, Bower, Sass, Bourbon, Neat, Garnish, jQuery, FitVids.js
+Analytics: Google Analytics
+
+
+/* CODE */
+
+CSS:    /assets/css/build/main.css
+JS:     /assets/js/build/scripts.js
+Grunt:  /Gruntfile.js
