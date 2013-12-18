@@ -5,7 +5,7 @@ layout: default
   <header class="blog-post-header">
     {% if page.category %}<p class="blog-post-topic">{{ page.category }}</p>{% endif %}
     <h1 class="blog-post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    <p class="blog-post-byline">By <span class="blog-post-author">{{ page.author}}</span> on <span class="blog-post-date">{{ page.date | date: "%B %d, %Y" }}</span></p>
+    <p class="blog-post-byline">By <span class="blog-post-author">{{ page.author.name }}</span> on <span class="blog-post-date">{{ page.date | date: "%B %d, %Y" }}</span></p>
   </header>
 
   <div class="blog-post-body">
