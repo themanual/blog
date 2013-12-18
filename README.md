@@ -17,14 +17,14 @@ With the current configuration, the resulting path will be `/yyyy/mm/dd/permalin
 
 ### Topic, Title, Synopsis, Byline
 
-Every other piece of metadata is placed in what Jekyll calls *YAML front-matter*. The base structure is:
+Every other piece of metadata is placed at the beggining of each post, in what Jekyll calls *YAML front-matter*.
 
 ```yaml
 ---
 layout: post
 
 title: Title Goes Here
-synopsis: A synopsis of this post goes here, for archives, email newsletter, and social sharing.
+synopsis: A synopsis of this post goes here. Used in archives, newsletter, and social sharing.
 author:
   name: Author Name
   twitter: authorusername
@@ -39,6 +39,7 @@ category: Category Name
 * `synopsis` should use sentence case.
 * `author` must stay blank.
 * `name` and `twitter` must be indented with two spaces. Never tabs.
+* `twitter` must NOT include the @ character
 * `category` should use title case.
 
 ## Previewing posts
@@ -47,7 +48,7 @@ To preview posts locally, first install Jekyll with `gem install jekyll`.
 
 Then, build the site with `jekyll build --drafts --future`. This includes drafts, even in the future.
 
-To launch a local server that auto-builds whenever a post changes, do `jekyll server --watch --drafts --future`.
+To launch a local server do `jekyll server --watch --drafts --future` and open `http://0.0.0.0:4000`.
 
 ## Developing the site
 
