@@ -65,6 +65,7 @@
   
   .wf-active.tr-coretext & {
     -webkit-font-smoothing: antialiased;
+    font-weight: weight(medium);
   }
 
   line-height: 1.5;
@@ -121,6 +122,14 @@
 
   ol {
     list-style-type: decimal;
+  }
+
+  strong {
+    font-weight: weight(bold);
+  }
+
+  em {
+    font-style: italic;
   }
 
   a {
