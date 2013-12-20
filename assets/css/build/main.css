@@ -844,6 +844,9 @@ a:hover, a:focus, a:active {
   line-height: 1.5;
   color: #333333;
 }
+.wf-active.tr-coretext .blog-post-body {
+  -webkit-font-smoothing: antialiased;
+}
 .blog-post-body > *:not(figure) {
   max-width: 640px;
   max-width: 32rem;

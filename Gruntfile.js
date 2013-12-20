@@ -67,6 +67,7 @@ module.exports = function(grunt) {
         src: [
           'bower_components/jquery/jquery.js',
           'bower_components/fitvids/jquery.fitvids.js',
+          'bower_components/trmix/dist/trmix.js',
           'assets/js/src/_plugins.js',
           'assets/js/src/_setup.js',
           'assets/js/src/main.js'

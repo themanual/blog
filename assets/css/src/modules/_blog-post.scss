@@ -63,6 +63,10 @@
 
 .blog-post-body {
   
+  .wf-active.tr-coretext & {
+    -webkit-font-smoothing: antialiased;
+  }
+
   line-height: 1.5;
   color: gray(20%);
 
