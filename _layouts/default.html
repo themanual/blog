@@ -10,8 +10,6 @@
     
   <!-- Title and Meta -->
   <title>{% if page.title %}{{page.title}} — {% endif %}{{ site.name }}</title>
-  {% if page.title %}<meta name="title" content="{{ page.title }}" />{% endif %}
-  {% if page.synopsis %}<meta name="description" content="{{ page.synopsis }}" />{% endif %}
   {% if page.author.name %}<meta name="author" content="{{ page.author.name }}">{% endif %}
 
   <!-- OG and Twitter -->
@@ -21,6 +19,8 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   
   {% if page.path contains '_posts' %}
+  <!-- Post Page -->
+  <meta name="description" content="{{ page.synopsis }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:description" content="{{ page.synopsis }}" />
   <meta name="twitter:creator" content="@{{ page.author.twitter }}" />
@@ -30,6 +30,8 @@
   <meta property="article:author" content="{{ page.author.name }}" />
   <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
   {% else %}
+  <!-- Non-Post Page -->
+  <meta name="description" content="{{ site.description }}" />
   <meta name="twitter:title" content="{{ site.name }}{% if page.title %} — {{page.title}}{% endif %}" />
   <meta name="twitter:description" content="{{ site.description }}" />
   <meta property="og:type" content="blog" />
