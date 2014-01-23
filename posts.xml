@@ -16,7 +16,7 @@ layout: none
 				
 				<description>{{ post.content | xml_escape }}</description>
 				
-				<link>{{ site.url }}{{ post.url }}?utm_source=rss&utm_medium=feed&utm_campaign=blog</link>
+				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 			</item>
 		{% endfor %}
