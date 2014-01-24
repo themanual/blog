@@ -2,7 +2,7 @@
 layout: post
 
 title: Typography and Typesetting the Web Edition
-synopsis: Choosing and setting web typography for The Manual, and some observations.
+synopsis: How we chose and set web type for The Manual, and some observations.
 author:
   name: Paulo Pereira
   twitter: paulozoom
@@ -15,7 +15,7 @@ Earlier this week, we released a preview of the work we've been doing on our web
 
 ## Typefaces
 
-In the video for [The Manual’s Kickstart project][kickstarter] Andy said:
+In the video for [The Manual’s Kickstart project][kickstarter], Andy said:
 
 > [The Manual] is a brand new limited-run print magazine, focussing around the maturing of design on the web. Each issue will have six substantial, beautifully illustrated feature articles, written by established and emerging talent, with a focus on bringing a greater depth to the conversation surrounding our profession.
 
