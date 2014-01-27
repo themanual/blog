@@ -1,4 +1,3 @@
-themanual-blog
-==============
+# The Manual: Blog
 
-Temporary Jekyll Blog for the manual
+Temporary Jekyll Blog for The Manual. Check the **gh-pages** branch. Hosted on GitHub.
