@@ -9,7 +9,7 @@ author:
 category: Process
 ---
 
-We plan to work in public here at The Manual, sharing insights from our work, the rationale behind our design decisions, releasing smaller but more frequent updates in our site, and in a larger way, being more transparent and open to our readers.
+We plan to work in public here at The Manual, sharing insights from our work, the rationale behind our design decisions, releasing smaller but more frequent updates to our site, and in a larger way, being more transparent and open to our readers.
 
 Earlier this week, we released a preview of the work we've been doing on our website by publishing [“Perennial Design”][perennial], an article from our upcoming fourth issue. While the final design will be more complete, this preview already reveals many design decisions, namely in terms of typography.
 
@@ -19,11 +19,11 @@ In the video for [The Manual’s Kickstart project][kickstarter], Andy said:
 
 > [The Manual] is a brand new limited-run print magazine, focussing around the maturing of design on the web. Each issue will have six substantial, beautifully illustrated feature articles, written by established and emerging talent, with a focus on bringing a greater depth to the conversation surrounding our profession.
 
-These words still guide us to this day, and we wanted the typography, which plays a major role in the overall design, to reflect the guiding principles of The Manual. Our typefaces should feel like the publication itself: mature but modern; substantial but friendly; deep but unassuming.
+These words still guide us to this day, and we wanted the typography, which plays a major role in the overall design, to reflect the guiding principles of The Manual. Our typefaces should feel like the publication itself: mature but modern, substantial but friendly, deep but unassuming.
 
-I began by picking up from the choices I had made on [The Manual, Everywhere][everywhere] teaser page — [Cronos Pro][cronos] and [Minion Pro][minion], two beautiful faces from Adobe type designer [Robert Slimbach][slimbach] which pair incredibly well. Then, I set an article with them, and let it sit for a while. Typefaces need time. We need to live with them before making up our minds. That means reading with them, and being around them to fully appreciate them how they are, feel, and behave. Typefaces have their own ways and little quirks which only reveal themselves after taking time to sink in.
+I began by picking up from the choices I had made on [The Manual, Everywhere][everywhere] teaser page — [Cronos Pro][cronos] and [Minion Pro][minion], two beautiful faces from Adobe type designer [Robert Slimbach][slimbach] which pair incredibly well. Then, I set an article with them, and let it sit for a while. Typefaces need time. We need to live with them before making up our minds. That means reading with them, and being around them to fully appreciate how they are, feel, and behave. Typefaces have their own ways and little quirks which only reveal themselves after taking time to sink in.
 
-But after a period, we still liked how they read — and still do — but it wasn't until I tried them in a different context that we started to understand that they weren't exactly right for us.
+After a period, we still liked how they read — and still do — but it wasn't until I tried them in a different context that we started to understand that they weren't exactly right for us.
 
 <figure class="border">
 <a href="/files/early-article-page.png"><img src="/files/early-article-page.png" /></a>
@@ -49,7 +49,7 @@ Besides working well in multiple contexts, we feel that these typefaces reflect 
 
 ## Typesetting
 
-The bulk of an article is its body, taking over 90% of its length. However, it proved to be a fairly straightforward design problem, due to the articles’ very simple nature: a sequence of ordinary paragraphs, with occasional subheadings or quotations (but nothing else), arranged consecutively and without anything on their sides.
+The bulk of an article is its body, taking over 90% of its length. However, it proved to be a fairly straightforward design problem, due to the articles’ very simple nature: a sequence of ordinary paragraphs, with occasional subheadings or quotations — but nothing else — arranged consecutively and without anything on either side.
 
 That’s not to say there weren't any constraints or interesting problems. Common typesetting details such as initials or opening paragraphs in a larger size were constrained by authors often starting their articles with quotations. On the other hand, authors also create an interesting problem with their use of footnotes, which in their current incarnation still dramatically disrupt the reading flow, a problem we're still working on.
 
@@ -57,17 +57,17 @@ However, the two most curious decisions have to do with seemingly ordinary parag
 
 ### Hyphenation
 
-When I first imported the previous issues’ articles and lessons — all of which I had previously read in print — on to the site, it occurred to me that I should try hyphenating the text[^ragged]. It looked good, but _looking good_ wasn't enough to from a solid opinion, so I read some passages but still couldn’t detect any major faults with hyphenation, so it stayed on.
+When I first imported the previous issues’ articles and lessons — all of which I had previously read in print — on to the site, it occurred to me that I should try hyphenating the text[^ragged]. It looked good, but _looking good_ wasn't enough to form a solid opinion, so I read some passages but still couldn’t detect any major faults with hyphenation, and it stayed on.
 
-Hyphenation didn’t make the cut, but it wasn't until I first set [“Perennial Design”][perennial] — which I hadn’t read before — and decided to read it in full on the browser that I my opinion reversed. As I was reading the article, it became increasingly obvious hyphenation had less than optimal results, and it was distracting and disrupting my reading. As it turns out, I hadn't _really read_ on the browser before — I thought I had, but reading a few passages is just not the same. Some problems are only caught and some judgments can only be made by being meticulous and thorough in observing the work, leaving no stone unturned. When setting type, there’s no substitute for reading.
+Hyphenation didn’t make the cut, but it wasn't until I first set [“Perennial Design”][perennial] — which I hadn’t read before — and decided to read it in full on the browser that I my opinion reversed. As I was reading the article, it became increasingly obvious that hyphenation had less than optimal results, and it was distracting and disrupting my reading. As it turns out, I hadn't _really read_ on the browser before — I thought I had, but reading a few passages is just not the same. Some problems are only caught and some judgments can only be made by being meticulous and thorough in observing the work, leaving no stone unturned. When setting type, there’s no substitute for reading.
 
 ### Indentation
 
 Hours before we launched, I decided to question a decision made long ago. Earlier in the process, as I was setting articles and lessons side by side, spacing consecutive paragraphs seemed like an obvious choice. Unlike articles, lessons don't usually have subheadings or quotations, and indenting paragraphs would create an impenetrable block of uninterrupted text[^lessons]. 
 
-However, as we were launching [“Perennial Design”][perennial] on its own, without a companion lesson, indented paragraphs had no reason not to be an viable choice, so I took some precious pre-launch time to see how they looked, and was surprisingly glad with the result. Not only it suits The Manual more,[^robin] evoking a more substantial feeling, as it also groups consecutive paragraphs nicely under a shared subheading, until the appearance of a new one imposes a break in the rhythm.
+However, as we were launching [“Perennial Design”][perennial] on its own, without a companion lesson, indented paragraphs had no reason not to be an viable choice, so I took some precious pre-launch time to see how they looked, and was surprisingly glad with the result. Not only it suits The Manual more,[^robin] evoking a more substantial feeling, as it also groups consecutive paragraphs nicely under a common subheading, until the appearance of a new one imposes a break in the rhythm.
 
-The rationale for spacing paragraphs was one of consistency, but  different kinds of pieces have their own particular constraints. Finding a proper solution for each specific set of problems, however related, is a better option than attempting at a one-size-fits-all decision for the sake of visual consistency[^lesson-header].
+The rationale for spacing paragraphs was one of consistency, but  different kinds of pieces have their own particular constraints. Finding a proper solution for each specific set of problems, however related, is a better option than attempting at a one-size-fits-all decision for the sake of consistency[^lesson-header].
 
 ## Observations
 
