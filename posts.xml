@@ -16,7 +16,7 @@ layout: none
 				
 				<description>{{ post.content | xml_escape }}</description>
 				
-				<link>{{ site.url }}{{ post.url }}</link>
+				<link>{{ site.url }}{{ post.url }}{{ site.rss_querystring | xml_escape }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 			</item>
 		{% endfor %}

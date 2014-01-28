@@ -1,9 +1,10 @@
-name:         "The Manual: Blog"
-description:  "Blog of The Manual, a publication for web designers."
-permalink:    /:year/:month/:day/:title
-url:          http://blog.alwaysreadthemanual.com
-rss_root:     http://alwaysreadthemanual.com/blog/
-rss_file:     posts.xml
+name:             "The Manual: Blog"
+description:      "Blog of The Manual, a publication for web designers."
+permalink:        /:year/:month/:day/:title
+url:              http://blog.alwaysreadthemanual.com
+rss_root:         http://alwaysreadthemanual.com/blog/
+rss_file:         posts.xml
+rss_querystring: "?utm_source=rss&utm_medium=feed&utm_campaign=blog"
 
 markdown: kramdown
 pygments: true
