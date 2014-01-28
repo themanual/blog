@@ -32,11 +32,13 @@
 .blog-post-title {
   font-family: $type-sans;
   font-weight: weight(bold);
-  @include rem(font-size, 36px);
-  line-height: 1.25;
-
+  line-height: 1.4;
   a:link, a:visited { color: black; }
   a:hover, a:focus  { border-bottom: solid 1px; }
+
+                                @include rem(font-size, 36px);
+  @include media-upto($bp-l)  { @include rem(font-size, 33px); }
+  @include media-upto($bp-m)  { @include rem(font-size, 30px); }
 }
 
 .blog-post-byline {

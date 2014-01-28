@@ -802,15 +802,27 @@ a:hover, a:focus, a:active {
 .blog-post-title {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 700;
+  line-height: 1.4;
   font-size: 36px;
   font-size: 1.8rem;
-  line-height: 1.25;
 }
 .blog-post-title a:link, .blog-post-title a:visited {
   color: black;
 }
 .blog-post-title a:hover, .blog-post-title a:focus {
   border-bottom: solid 1px;
+}
+@media screen and (max-width: 800px) {
+  .blog-post-title {
+    font-size: 33px;
+    font-size: 1.65rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog-post-title {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
 }
 
 .blog-post-byline {
