@@ -1,8 +1,8 @@
 @mixin container-spacing($props, $factor: 1) {
   @each $prop in $props {
-    #{$prop}: $factor * 6%;
+    #{$prop}: $factor * 5%;
     @include media-from($max-width) {
-      #{$prop}: $factor * (6%/100% * $max-width);
+      #{$prop}: $factor * (5%/100% * $max-width);
     }
   }
 }
