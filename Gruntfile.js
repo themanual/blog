@@ -130,7 +130,7 @@ module.exports = function(grunt) {
 
     // Jekyll
     jekyll: {
-      dev:    { options: {drafts: true } },
+      dev:    { },
       build:  { }
     },
 
