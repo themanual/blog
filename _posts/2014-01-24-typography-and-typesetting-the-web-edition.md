@@ -15,7 +15,7 @@ Earlier this week, we released a preview of the work we've been doing on our web
 
 ## Typefaces
 
-In the video for [The Manual’s Kickstart project][kickstarter], Andy said:
+In the video for [The Manual’s Kickstarter project][kickstarter], Andy said:
 
 > [The Manual] is a brand new limited-run print magazine, focussing around the maturing of design on the web. Each issue will have six substantial, beautifully illustrated feature articles, written by established and emerging talent, with a focus on bringing a greater depth to the conversation surrounding our profession.
 
