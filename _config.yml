@@ -1,5 +1,5 @@
 name:             "The Manual: Blog"
-description:      "Blog of The Manual, a publication for web designers."
+description:      "Blog of The Manual, a publication for web designers"
 permalink:        /:year/:month/:day/:title
 url:              http://blog.alwaysreadthemanual.com
 rss_root:         http://alwaysreadthemanual.com/blog/
@@ -11,8 +11,8 @@ pygments: true
 
 include:  ['.htaccess']
 exclude:  [
-  'package.json', 
+  'package.json',
   'bower.json',
-  'node_modules', 
+  'node_modules',
   'bower_components',
   'README.md']
