@@ -8,7 +8,7 @@ rss_querystring: "?utm_source=rss&utm_medium=feed&utm_campaign=blog"
 image_path:       /assets/img
 
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 include:  ['.htaccess']
 exclude:  [
