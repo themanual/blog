@@ -7,24 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <meta name="pocket-site-verification" content="33201868762daceeaf254fa97a459f" />
-    
+
   <!-- Title and Meta -->
   <title>{% if page.title %}{{page.title}} — {% endif %}{{ site.name }}</title>
   {% if page.author.name %}<meta name="author" content="{{ page.author.name }}">{% endif %}
 
   <!-- OG and Twitter -->
+  {% if page.picture %}
+  <meta name="twitter:card" content="summary_large_image" />
+  {% else %}
   <meta name="twitter:card" content="summary" />
+  {% endif %}
   <meta name="twitter:site" content="@themanual" />
   <meta property="og:site_name" content="{{ site.name }}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="fb:app_id" content="1442422042642768" />
-  
+
   {% if page.path contains '_posts' %}
   <!-- Post Page -->
   <meta name="description" content="{{ page.synopsis }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:description" content="{{ page.synopsis }}" />
   <meta name="twitter:creator" content="@{{ page.author.twitter }}" />
+  {% if page.picture %}
+  <meta name="twitter:img:src" content="{{ site.url }}{{ site.image_path }}/{{ page.picture }}" />
+  <meta property="og:image" content="{{ site.url }}{{ site.image_path }}/{{ page.picture }}" />
+  {% endif %}
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:description" content="{{ page.synopsis }}" />
@@ -39,7 +47,7 @@
   <meta property="og:title" content="{{ site.name }}{% if page.title %} — {{page.title}}{% endif %}" />
   <meta property="og:description" content="{{ site.synopsis }}" />
   {% endif %}
-  
+
   <!-- JS -->
   <script type="text/javascript" src="//use.typekit.net/wnf5tgz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -49,7 +57,7 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="The Manual: Blog" href="{{ site.rss_root }}{{ site.rss_file }}" />
-  
+
 </head>
 <body lang="en">
 

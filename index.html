@@ -12,6 +12,12 @@ layout: default
         <p class="blog-post-byline byline vcard">By <a href="https://twitter.com/{{ post.author.twitter }}" class="blog-post-author fn url author" rel="author">{{ post.author.name }}</a> on <time datetime="{{ post.date | date: "%Y-%m-%d"}}" class="blog-post-date">{{ post.date | date: "%B %d, %Y" }}</time></p>
       </header>
 
+      {% if post.picture %}
+      <figure class="blog-post-picture">
+        <img src="{{ site.image_path }}/{{ post.picture }}" alt="" />
+      </figure>
+      {% endif %}
+
       <div class="blog-post-body entry-content">
         {{ post.content }}
       </div>
