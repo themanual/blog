@@ -24,9 +24,9 @@ It will be available in our shop toward the end of September for pre-orders and 
 
 To celebrate the new release, we’re offering Issues 1, 2, and 3, along with our custom engraved plywood case, at a discount **until Friday, September 5th**:
 
-* [Single issues](http://www.google.com/url?q=http%3A%2F%2Fbuy.alwaysreadthemanual.com%2Fcollections%2Fsingle-issues&sa=D&sntz=1&usg=AFQjCNFrOQvKp0xvjKg1KYAnpX3El9p0Kw): **$20**, from $25
-* [Volume I](http://www.google.com/url?q=http%3A%2F%2Fbuy.alwaysreadthemanual.com%2Fproducts%2Fvolume-i&sa=D&sntz=1&usg=AFQjCNEjYEnZWXGeffKZc9LZ6CR9GQbQBg) (Issues 1, 2, and 3 in plywood case): **$80**, from $100
-* [Volume I](http://www.google.com/url?q=http%3A%2F%2Fbuy.alwaysreadthemanual.com%2Fproducts%2Fvolume-i&sa=D&sntz=1&usg=AFQjCNEjYEnZWXGeffKZc9LZ6CR9GQbQBg) (Case Only): **$25**, from $35
+* [Single issues](http://shop.themanual.org/collections/single-issues): **$20**, from $25
+* [Volume I](http://shop.themanual.org/products/volume-i) (Issues 1, 2, and 3 in plywood case): **$80**, from $100
+* [Volume I](http://shop.themanual.org/products/volume-i) (Case Only): **$25**, from $35
 
 On Monday, we’ll tell you more about the articles and lessons in Issue 4, as well as the illustrators who helped bring each piece to life.
 

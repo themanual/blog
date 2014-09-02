@@ -4,18 +4,19 @@ layout: post
 title: Inside Issue 4
 synopsis: Take a closer look at the six articles and six lessons coming in Issue 4, available for pre-order in late September, shipping in early October.
 picture: "issue-4-authors-row.png"
+category: Inside the Issues
 author:
   name: Mari Huertas
   twitter: marihuertas
 ---
 
-Last week, we told you [Issue 4 had gone to print](http://blog.alwaysreadthemanual.com/2014/08/29/issue-4-arrives-in-early-october/) and would be available for pre-order in late September, shipping in early October. (Reminder: in celebration, we’ve discounted Issues 1-3 and our engraved plywood case in [our store](http://buy.alwaysreadthemanual.com/) through Friday, September 5.)
+Last week, we told you [Issue 4 had gone to print](http://blog.themanual.org/2014/08/29/issue-4-arrives-in-early-october/) and would be available for pre-order in late September, shipping in early October. (Reminder: in celebration, we’ve discounted Issues 1-3 and our engraved plywood case in [our store](https://shop.themanual.org/) through Friday, September 5.)
 
 Today, we want to give a deeper look at what you can expect from the six articles and six lessons shared by our authors — Jennifer Brook, David Cole, Paul Ford, Diana Kimball, Wilson Miner, and Craig Mod — as well as the illustrators whose art continues to be an essential part of The Manual.
 
 ## Authors and Illustrators
 
-Like [our previous three issues](http://buy.alwaysreadthemanual.com/), Issue 4 contains six substantial articles and six personal lessons from some of the best minds writing and working on the web today, along with a beautiful centerpiece illustration by [Jen Mussari](https://twitter.com/jenmussari).
+Like [our previous three issues](https://shop.themanual.org/), Issue 4 contains six substantial articles and six personal lessons from some of the best minds writing and working on the web today, along with a beautiful centerpiece illustration by [Jen Mussari](https://twitter.com/jenmussari).
 
 We start with [Craig Mod](https://twitter.com/craigmod), whose article “On Permission” focuses on finding whitespace to free the mind. In his lesson, he shares his experience moving through memory to being present. Craig’s article is illustrated by [Julianna Brion](https://twitter.com/JuliannaBrion).
 
