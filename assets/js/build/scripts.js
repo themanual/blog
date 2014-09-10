@@ -8909,57 +8909,6 @@ if(p=/MSIE ([\d\w\.]+)/.exec(s))t=1,u=n();else if(p=/Trident.*rv:([\d\w\.]+)/.ex
 5,u=n();r=new function(a,b,g,m){this.d=a;this.g=b;this.a=g;this.f=m}(t,u,v,w);var x=q(),y,z=q();y="unknown"!==z?z:2===r.a||4===r.a?"subpixel":1===r.a?l(r.f,new f(6,0))?"subpixel":1===r.d?l(r.g,new f(7,0))?"subpixel":"grayscale":"subpixel":"unknown";var e=c.document.documentElement,A;
 if(1===r.a){var B,C;if(!(C=2===r.d)){var D;(D=4===r.d)||(D=-1===k(r.f,new f(6,0)));C=D}if(C)B="gdi";else{var E;if(l(r.f,new f(6,0))){var F;if(F=1===r.d){var G=r.g,I=new f(8,0);F=0===k(G,I)||-1===k(G,I)}E=F?"gdi":"directwrite"}else E="unknown";B=E}A=B}else A=8===r.a?"directwrite":2===r.a||3===r.a?"coretext":5===r.a||4===r.a||6===r.a||7===r.a||9===r.a?"freetype":"unknown";d("tr-"+A);"unknown"===x&&"unknown"!==y&&(x+="-"+y);d("tr-aa-"+x);}());
 
-// Checks whether a DOM click event should open a link in a new tab.
-// https://github.com/segmentio/is-meta
-function isMeta (e) {
-  if (e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) return true;
-
-  // Logic that handles checks for the middle mouse button, based
-  // on [jQuery](https://github.com/jquery/jquery/blob/master/src/event.js#L466).
-  var which = e.which, button = e.button;
-  if (!which && button !== undefined) {
-    return (!button & 1) && (!button & 2) && (button & 4);
-  } else if (which === 2) {
-    return true;
-  }
-
-  return false;
-}
-
-$.fn.eventLink = function(category, action) {
-  return this.each(function() {
-    $(this).click(function(ev) {
-      var el = this;
-      // only act if triggered by user and analytics loaded
-      if (ev.originalEvent && ga.create && el.href && el.target !== '_blank') {
-        ev.preventDefault();
-        ga('send', 'event', {
-          'eventCategory':  category,
-          'eventAction':    action,
-          'hitCallback':    function() { window.location.href = el.href; }
-        });
-      }
-    });
-  });
-};
-
-$.fn.socialLink = function(network, action, target) {
-  return this.each(function() {
-    $(this).click(function(ev) {
-      var el = this;
-      // only act if triggered by user and analytics loaded
-      if (ev.originalEvent && ga.create && el.href && el.target !== '_blank') {
-        ev.preventDefault();
-        ga('send', 'social', {
-          'socialNetwork':  network,
-          'socialAction':   action,
-          'socialTarget':   target,
-          'hitCallback':    function() { window.location.href = el.href; }
-        });
-      }
-    });
-  });
-};
 // Init Twitter
 window.twttr = (function (d,s,id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
@@ -8968,21 +8917,4 @@ window.twttr = (function (d,s,id) {
   return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f); } });
 }(document, "script", "twitter-wjs"));
 // Init fitVids
-$('.blog-post-body').fitVids();
-
-// Track twitter follows
-twttr.ready(function (twttr) {
-  twttr.events.bind('follow', function(intent_event) {
-    ga('send', 'social', 'Twitter', 'Follow', '@themanual');
-  });
-});
-
-// Track newsletter subscriptions
-$('#sidebar-subscribe-form').submit(function() {
-  ga('send', 'event', 'Newsletter - Blog', 'Subscribe');
-});
-
-// Track other interactions
-$('.site-header-buy a').eventLink('Store', 'Visit');
-$('.link-rss').eventLink('RSS', 'Subscribe');
-$('.link-twitter').socialLink('Twitter', 'Visit Profile', '@themanual');
+$('.blog-post-body .video').fitVids();

@@ -1,5 +1,5 @@
 name:             "The Manual: Blog"
-description:      "Blog of The Manual, a publication for web designers"
+description:      "Blog of The Manual, a design journal for the web."
 permalink:        /:year/:month/:day/:title
 url:              http://blog.themanual.org
 rss_root:         http://blog.themanual.org/

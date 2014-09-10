@@ -892,6 +892,16 @@ a:hover, a:focus, a:active {
 .wf-active.tr-coretext .blog-post-body figcaption, .wf-active.tr-coretext .blog-post-body .footnotes {
   font-weight: 400;
 }
+.blog-post-body > hr {
+  margin: 2em 0;
+  padding: 0;
+  display: block;
+  border: none;
+  text-align: center;
+}
+.blog-post-body > hr:before {
+  content: "\2042";
+}
 .blog-post-body > * {
   max-width: 640px;
   max-width: 32rem;
@@ -910,13 +920,13 @@ a:hover, a:focus, a:active {
 .blog-post-body > h2 {
   font-size: 1.3em;
   color: black;
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 .blog-post-body > h2 + * {
   margin-top: 0.5em;
 }
 .blog-post-body > h3 {
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 .blog-post-body > h3 + * {
   margin-top: 0.5em;

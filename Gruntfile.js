@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  
+
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
@@ -68,7 +68,6 @@ module.exports = function(grunt) {
           'bower_components/jquery/jquery.js',
           'bower_components/fitvids/jquery.fitvids.js',
           'bower_components/trmix/dist/trmix.js',
-          'assets/js/src/_plugins.js',
           'assets/js/src/_setup.js',
           'assets/js/src/main.js'
         ],
@@ -86,7 +85,7 @@ module.exports = function(grunt) {
       }
     },
 
-    
+
 
 
 
@@ -162,7 +161,7 @@ module.exports = function(grunt) {
 
 
   });
-  
+
   // Build CSS and JS
   // but do not copy or notify
   grunt.registerTask('css:dev', ['sass:dev', 'cssmin:minify']);
