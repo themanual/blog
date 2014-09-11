@@ -10,9 +10,9 @@ author:
   twitter: marihuertas
 ---
 
-Previously, we told you [Issue 4 had gone to print](http://blog.themanual.org/2014/08/29/issue-4-arrives-in-early-october/), then gave you a deeper look at [Issue 4’s authors and illustrators](http://blog.themanual.org/2014/09/01/inside-issue-4/).
+Previously, we told you [Issue 4 had gone to print](/2014/08/29/issue-4-arrives-in-early-october/), then gave you a deeper look at [Issue 4’s authors and illustrators](/2014/09/01/inside-issue-4/).
 
-Both times, we mentioned we had some big news to share, and here it is: [we’re launching a Kickstarter](), with three community-oriented goals to free our content and make it more broadly available.
+Both times, we mentioned we had some big news to share, and here it is: [we’re launching a Kickstarter](https://themanual.org/kickstarter/everywhere), with three community-oriented goals to free our content and make it more broadly available.
 
 ## Big goals, open future
 
@@ -28,9 +28,9 @@ In addition to our print edition, you can now find us on any ebook device, audio
 
 You can sign up for a recurring subscription for the web, ebook, audiobook, and/or print editions if you’d like to support our work.
 
-To learn more, watch our Kickstarter video, below, and [read through the project description]() — we hope you’ll be as excited as we are about what’s in store and back our work.
+To learn more, watch our Kickstarter video, below, and [read through the project description](https://themanual.org/kickstarter/everywhere) — we hope you’ll be as excited as we are about what’s in store and back our work.
 
-<div class="video"><iframe width="800" height="600" src="https://www.kickstarter.com/projects/waxpancake/xoxo-festival/widget/video.html" frameborder="0" scrolling="no"></iframe></div>
+<div class="video"><iframe width="800" height="600" src="https://www.kickstarter.com/projects/goodonpaper/the-manual-everywhere/widget/video.html" frameborder="0" scrolling="no"></iframe></div>
 
 In return, we’re giving our backers early access to everything we’re building now and everything we’ll build in the future — along with a few extra rewards, including **a trip to Iceland,** where The Manual is printed. We’ll rent an Airbnb, tour the factory, get an up-close view of Issue 5, and talk about the future of our work. Pack your snow boots!
 
