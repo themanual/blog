@@ -470,6 +470,16 @@ a:hover, a:focus, a:active {
   color: black;
   border-color: #4d4d4d;
 }
+.site-header-buy > a.kickstarter {
+  border-color: #39DC77;
+  background-color: #39DC77;
+  color: white;
+}
+.site-header-buy > a.kickstarter:hover {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
 
 .blog > div {
   *zoom: 1;

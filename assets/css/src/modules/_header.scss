@@ -9,7 +9,7 @@
 
   @include container-spacing(padding-top);
   @include container-spacing(padding-bottom);
-  
+
   @include media-from($bp-l) {
     @include container-spacing(padding-top, 0.5);
     @include container-spacing(padding-bottom, 0.5);
@@ -40,12 +40,12 @@
   @include rem(font-size,   32px);
   @include rem(line-height, 50px);
   font-weight: weight(bold);
-  
+
   a { color: gray(20%); }
   i { color: gray(60%); }
-    
-  a { 
-    @include hover { 
+
+  a {
+    @include hover {
       &, i { color: black; }
     }
   }
@@ -61,11 +61,10 @@
   @include rem(font-size, 15px);
   text-transform: uppercase;
   text-align: center;
-  
+
   display: block;
   border: solid 2px $color-link-blue-nicer;
   border-radius: 5px;
-
 
   @include rem(height, 50px);
   @include rem(line-height, 50px - 4px);
@@ -78,5 +77,16 @@
   &:hover {
     color: black;
     border-color: gray(30%);
+  }
+
+  &.kickstarter {
+    border-color: #39DC77;
+    background-color: #39DC77;
+    color: white;
+    &:hover {
+      border-color: black;
+      background-color: black;
+      color: white;
+    }
   }
 }
