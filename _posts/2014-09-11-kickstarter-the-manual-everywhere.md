@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: We’re launching a Kickstarter!
+title: We’re Launching a Kickstarter!
 synopsis: We’re building an open, uncopyrighted web edition, as well as ebooks and audiobooks. And we’re using Kickstarter to do it.
 picture: "the-manual-everywhere.png"
 category: Announcement

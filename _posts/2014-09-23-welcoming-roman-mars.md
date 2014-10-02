@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Welcoming Roman Mars, our Issue 4 audiobook narrator
+title: Welcoming Roman Mars, our Issue 4 Audiobook Narrator
 synopsis: We’re excited to welcome Roman Mars of 99% Invisible as the narrator for our Issue 4 audiobook!
 picture: "roman-mars-narrating-the-manual.jpg"
 author:
