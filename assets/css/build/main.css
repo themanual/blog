@@ -702,6 +702,8 @@ a:hover, a:focus, a:active {
   padding-right: 0.5rem;
   margin-top: 40px;
   margin-top: 2rem;
+  max-width: 640px;
+  max-width: 32rem;
   border-radius: 6px;
   margin-right: 1em;
   font-size: 16px;
@@ -780,14 +782,6 @@ a:hover, a:focus, a:active {
   outline: none;
 }
 
-.blog-post {
-  padding-bottom: 5%;
-}
-@media screen and (min-width: 1251px) {
-  .blog-post {
-    padding-bottom: 62.5px;
-  }
-}
 .blog-post + .blog-post {
   border-top: solid 1px #e6e6e6;
   margin-top: 5%;
@@ -1012,6 +1006,44 @@ a:hover, a:focus, a:active {
 }
 .blog-post-body .footnotes *:target {
   color: black;
+}
+
+.blog-post-footer {
+  max-width: 640px;
+  max-width: 32rem;
+  padding: 20px;
+  padding: 1rem;
+  margin-top: 5%;
+  border-radius: 4px;
+  font-size: 19px;
+  font-size: 0.95rem;
+  font-family: "franklin-gothic-urw", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #4d4d4d;
+  line-height: 1.4;
+}
+@media screen and (min-width: 1251px) {
+  .blog-post-footer {
+    margin-top: 62.5px;
+  }
+}
+.blog-post-footer.kickstarter {
+  border: solid 1px #29E079;
+  background: #F9FEFB;
+}
+.blog-post-footer.kickstarter a {
+  font-weight: 500;
+  color: #29E079;
+}
+.blog-post-footer.kickstarter a:hover, .blog-post-footer.kickstarter a:focus {
+  color: black;
+}
+.blog-post-footer h4 {
+  font-size: 1.1em;
+  color: black;
+  font-weight: 700;
+  margin-bottom: .25em;
 }
 
 .keyword-list {

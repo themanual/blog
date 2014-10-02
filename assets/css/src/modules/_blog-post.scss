@@ -1,6 +1,4 @@
 .blog-post {
-  @include container-spacing(padding-bottom);
-
   + .blog-post {
     border-top: divider();
     @include container-spacing(margin-top);
@@ -211,5 +209,36 @@
     *:target {
       color: black;
     }
+  }
+}
+
+.blog-post-footer {
+  @include rem(max-width, 32rem);
+  @include rem(padding, 1rem);
+  @include container-spacing(margin-top);
+  border-radius: 4px;
+
+  @include rem(font-size, 19px);
+  font-family: $type-sans;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: gray(30%);
+  line-height: 1.4;
+
+  &.kickstarter {
+    border: solid 1px #29E079;
+    background: #F9FEFB;
+    a {
+      font-weight: weight(medium);
+      color: #29E079;
+      &:hover, &:focus { color: black; }
+    }
+  }
+
+  h4 {
+    font-size: 1.1em;
+    color: black;
+    font-weight: weight(bold);
+    margin-bottom: .25em;
   }
 }

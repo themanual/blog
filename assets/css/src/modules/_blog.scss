@@ -121,6 +121,7 @@
   @include rem(padding-top padding-bottom, 20px);
   @include rem(padding-left padding-right, 10px);
   @include rem(margin-top, 2rem);
+  @include rem(max-width, 32rem);
   
   border-radius: 6px;
   margin-right: 1em;
