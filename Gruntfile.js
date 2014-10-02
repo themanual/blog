@@ -150,12 +150,12 @@ module.exports = function(grunt) {
       js: {
         files: ['assets/js/src/**/*'],
         tasks: ['js:dev', 'copy:js', 'notify:js']
-      },
+      }//,
 
-      jekyll: {
-        files: ["*.{yml,md,html,xml}", "_*/**", "!_site/**/*"],
-        tasks: ['jekyll:dev', 'notify:jekyll'],
-      }
+      // jekyll: {
+      //   files: ["*.{yml,md,html,xml}", "_*/**", "!_site/**/*"],
+      //   tasks: ['jekyll:dev', 'notify:jekyll'],
+      // }
 
     }
 
