@@ -14,7 +14,7 @@ Previously, we told you [Issue 4 had gone to print](/2014/08/29/issue-4-arrives-
 
 Both times, we mentioned we had some big news to share, and here it is: [we’re launching a Kickstarter](https://themanual.org/kickstarter/everywhere), with three community-oriented goals to free our content and make it more broadly available.
 
-## Big goals, open future
+## Big Goals, Open Future
 
 ### 1) We’re publishing a free and open web edition.
 
@@ -34,7 +34,7 @@ To learn more, watch our Kickstarter video, below, and [read through the project
 
 In return, we’re giving our backers early access to everything we’re building now and everything we’ll build in the future — along with a few extra rewards, including **a trip to Iceland,** where The Manual is printed. We’ll rent an Airbnb, tour the factory, get an up-close view of Issue 5, and talk about the future of our work. Pack your snow boots!
 
-## New identity, site design, and URL
+## New Identity, Site Design, and URL
 
 We also are unveiling a brand-new look, including:
 
@@ -42,7 +42,7 @@ We also are unveiling a brand-new look, including:
 * **A new website:** It’s elegantly responsive and designed with reading in mind, and it allows you to browse all articles and lessons by topic and issue.
 * **A new URL:** Our current URL always felt like a mouthful, so we’ve moved to [themanual.org](http://themanual.org/).
 
-## Thank you
+## Thank You
 
 These are big steps, and we continue to take them because we have your support. Thank you for helping to bring us this far — we hope you’ll continue to enjoy The Manual, Everywhere.
 

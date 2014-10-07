@@ -12,7 +12,7 @@ category: Announcement
 
 We’re excited to share that Issue 4 of The Manual has shipped and is being printed. Although we’re expanding beyond print (more on that next week!), this is a big moment for us, and we want to share some details about the issue with you.
 
-## Six new authors, beautiful new design
+## Six New Authors, Beautiful New Design
 
 Issue 4 marks the beginning of a new three-issue volume and features six articles and six lessons from voices you’ll recognize: [Jennifer Brook](https://twitter.com/jenniferbrook), [David Cole](https://twitter.com/irondavy), [Paul Ford](https://twitter.com/ftrain), [Diana Kimball](https://twitter.com/dianakimball), [Wilson Miner](https://twitter.com/wilsonminer), and [Craig Mod](https://twitter.com/craigmod). All have smart, reflective takes, and we’re looking forward to opening them to a broader community.
 
@@ -20,7 +20,7 @@ The print edition of our new issue has a completely new design by Frank Chimero 
 
 It will be available in our shop toward the end of September for pre-orders and begin shipping in early October — but if you’d like a sneak peek, check out Wilson Miner’s article, [“Perennial Design.”](http://alwaysreadthemanual.com/issues/4/wilson-miner/article)
 
-## Issues 1–3 on sale for a week
+## Issues 1–3 on Sale for a Week
 
 To celebrate the new release, we’re offering Issues 1, 2, and 3, along with our custom engraved plywood case, at a discount **until Friday, September 5th**:
 

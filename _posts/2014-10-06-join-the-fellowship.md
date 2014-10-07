@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "You’re Invited: Join The Fellowship"
+title: "You’re Invited: Join the Fellowship"
 synopsis: We’re opening our doors and inviting you to join The Fellowship – help shape the future of The Manual, get early access to everything we make, and receive special artifacts that only fellows will see.
 author:
   name: Paulo Pereira
