@@ -871,6 +871,7 @@ a:hover, a:focus, a:active {
 }
 
 .blog-post-body {
+  -webkit-font-smoothing: antialiased;
   font-family: "freight-text-pro", serif;
   font-weight: 400;
   line-height: 1.5;
@@ -888,13 +889,6 @@ a:hover, a:focus, a:active {
 }
 .blog-post-body h2, .blog-post-body h3 {
   font-weight: 700;
-}
-.wf-active.tr-coretext .blog-post-body {
-  -webkit-font-smoothing: antialiased;
-  font-weight: 500;
-}
-.wf-active.tr-coretext .blog-post-body figcaption, .wf-active.tr-coretext .blog-post-body .footnotes {
-  font-weight: 400;
 }
 .blog-post-body > hr {
   margin: 2em 0;

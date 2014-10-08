@@ -62,7 +62,7 @@
 }
 
 .blog-post-body {
-
+  -webkit-font-smoothing: antialiased;
   font-family: $type-serif;
   font-weight: weight(regular);
 
@@ -75,15 +75,6 @@
 
   h2, h3 {
     font-weight: weight(bold);
-  }
-
-  .wf-active.tr-coretext & {
-    -webkit-font-smoothing: antialiased;
-    font-weight: weight(medium);
-
-    figcaption, .footnotes {
-      font-weight: weight(regular);
-    }
   }
 
   line-height: 1.5;
