@@ -6,7 +6,7 @@ category: "Behind the Scenes"
 author:
   name: Paulo Pereira
   twitter: paulozoom
-picture: "identity-tote-tee.jpg"
+picture: "identity-solo.png"
 picture_hide: true
 ---
 
