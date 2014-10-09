@@ -7,7 +7,7 @@ layout: default
     <h1 class="blog-post-title entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
     <p class="blog-post-byline byline vcard">By <a href="https://twitter.com/{{ page.author.twitter }}" class="blog-post-author fn url author" rel="author">{{ page.author.name }}</a> on <time datetime="{{ page.date | date: "%Y-%m-%d"}}" class="blog-post-date">{{ page.date | date: "%B %d, %Y" }}</time></p>
   </header>
-  {% if page.picture %}
+  {% if page.picture and page.picture_hide != true %}
   <figure class="blog-post-picture">
     <img src="{{ site.image_path }}/{{ page.picture }}" alt="" />
   </figure>
