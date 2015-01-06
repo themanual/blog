@@ -15,7 +15,7 @@ Location: Berlin, Germany
 
 Hosting: GitHub Pages
 Software: MAMP, Jekyll, Grunt, Bower, Sass, Bourbon, Neat, Garnish, jQuery, FitVids.js
-Analytics: Google Analytics
+Analytics: GoSquared
 
 
 /* CODE */
