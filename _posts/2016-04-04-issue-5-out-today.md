@@ -9,7 +9,7 @@ author:
 category: Announcement
 ---
 
-Issue 5 is available today, [free for everyone to read on themanual.org](https://themanual.org/read/issues/5). We’re also making our digital editions, which we usually price at $15, free to all. You can [download in ePub and Kindle formats](https://www.dropbox.com/sh/e6o6vojpjxpfhis/AABiCQvIZAiHzDG3-ppJsw9Va?dl=0), or find it listed among your issues when you [log in to your account](https://themanual.org/login).
+Issue 5 is available today, [free for everyone to read on themanual.org](https://themanual.org/read/issues/5). We’re also making our digital editions, which we usually price at $15, free to all. You can [download in ePub and Kindle formats](https://s3.amazonaws.com/download.themanual.org/themanual-issue-5.zip), or find it listed among your issues when you [log in to your account](https://themanual.org/login).
 
 For now, there will be no print edition. It is my hope that we can eventually return to Issue 5 to commit these magnificent articles—some of our finest to date—to print. Please enjoy our web and digital editions freely as a token of my appreciation for your continued patience.
 
