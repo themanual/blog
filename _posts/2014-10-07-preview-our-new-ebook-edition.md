@@ -57,7 +57,7 @@ If you love The Manual and want to enjoy all our editions in ebook formats, [ple
 [^fn-ebook-nesting]: This may not work perfectly in every device/app.
 [^fn-ebook-jumping]: Some ebook reading devices or apps don‘t let readers quickly jump through chapters.
 
-[ebook]: https://www.dropbox.com/sh/it1rfhz4atzyhhu/AACDqmwMLEwYKfNrD5B3orRGa?dl=0
+[ebook]: https://s3.amazonaws.com/download.themanual.org/the-manual-issue-4-sample.zip
 [ks]: https://www.kickstarter.com/projects/goodonpaper/the-manual-everywhere
 [preview-web]: http://alwaysreadthemanual.com/issues/4/wilson-miner/article
 [preview-audiobook]: http://blog.themanual.org/2014/10/02/preview-issue-4-audiobook-by-roman-mars/
