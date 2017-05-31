@@ -2,7 +2,7 @@
 layout: post
 
 title: Out Of Stock
-synopsis: Due to an catastrophic error on the part of our fulfillment company, almost all of our print editions have been destroyed.
+synopsis: Due to an catastrophic error on the part of our fulfillment company, almost all of our books have been destroyed.
 author:
   name: Andy McMillan
   twitter: andymcmillan
